@@ -1,110 +1,129 @@
-# 강원도 신재생 에너지 데이터 분석 프로젝트
+# 강원도 신재생에너지 분석 프로젝트
 
 ## 프로젝트 개요
+강원도 RE100 및 그린 뉴딜 정책 기반 신재생 에너지 산업 분석
 
-본 프로젝트는 **강원도 신재생 에너지 발전 현황과 향후 발전 가능성**을 데이터 기반으로 분석하는 것을 목표로 합니다.
-RE100 정책 및 한국판 그린 뉴딜(스마트 그린도시 사업)을 중심으로, 강원도가 신재생 에너지 산업의 최적 입지로서 가지는 경쟁력을 정량적으로 검증합니다.
+## 팀원
+- 천예리: 정책 자료 정리, 분석 설계, 결과 해석
+- 김정현: 데이터 수집 자동화, 전처리, 시각화
 
-* **프로젝트명**: 강원도 신재생 에너지 발전 및 현황 분석
-* **부제**: 강원도 RE100 및 그린 뉴딜 정책 기반 신재생 에너지 산업 분석
-* **팀원**: 천예리, 김정현
+## 프로젝트 구조
+```
+KDT-RE-DataAnalysis/
+├── data/
+│   ├── raw/              # 원본 데이터
+│   ├── processed/        # 전처리된 데이터
+│   └── policy/           # 정책 자료
+├── scripts/
+│   ├── crawling/         # 크롤링 스크립트
+│   └── preprocessing/    # 전처리 스크립트
+├── notebooks/            # 분석용 Jupyter Notebook
+├── docs/                 # 문서
+├── results/              # 분석 결과
+│   ├── figures/          # 그래프/차트
+│   └── tables/           # 통계 테이블
+└── README.md
+```
 
----
+## 설치 방법
+
+### 1. 가상환경 생성 (권장)
+```bash
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+```
+
+### 2. 필요 라이브러리 설치
+```bash
+pip install pandas numpy matplotlib seaborn
+pip install requests beautifulsoup4 selenium
+pip install folium jupyter
+```
+
+## 실행 방법
+
+### 전체 파이프라인 실행 (샘플 데이터)
+```bash
+python run_pipeline.py --sample
+```
+
+### 실제 데이터로 실행
+```bash
+python run_pipeline.py --real-data
+```
+
+### 단계별 실행
+```bash
+# 1. 데이터 수집
+python scripts/renewable_energy_crawler.py
+
+# 2. 기상 데이터 수집
+python scripts/weather_data_crawler.py
+
+# 3. 데이터 전처리
+python scripts/data_preprocessing.py
+
+# 4. 데이터 통합
+python scripts/data_integration.py
+```
+
+## 데이터 소스
+
+### 신재생에너지 발전량
+- **출처**: 한국에너지공단 신재생에너지센터
+- **URL**: https://www.knrec.or.kr/biz/pds/statistic/list.do
+- **내용**: 지역별/에너지원별 발전량, 설비용량
+
+### 기상 데이터
+- **출처**: 기상청 기상자료개방포털
+- **URL**: https://data.kma.go.kr
+- **내용**: 일사량, 풍속, 강수량, 기온
+- **참고**: API 키 발급 필요
+
+### 정책 및 예산
+- **출처**: 강원특별자치도청
+- **URL**: https://state.gwd.go.kr/portal
+- **내용**: 그린뉴딜 예산, RE100 정책
 
 ## 분석 목표
 
-* 강원도 신재생 에너지 발전 현황 정량 분석
-* 기후·지리·정책 등 외부 요인에 따른 발전량 차이 분석
-* RE100 산업 관점에서 강원도의 입지 경쟁력 도출
-* 2025년까지 추진된 강원도 그린 뉴딜 정책 효과 분석
-* 향후 강원지역 신재생 에너지 발전 전망 예측
+### 핵심 분석 질문
+1. 기후 요인은 강원도 신재생에너지 발전량에 얼마나 영향을 미치는가?
+2. 정책 예산 투입 전후 발전량 변화는 통계적으로 유의미한가?
+3. 강원도는 타 시도 대비 RE100 산업 입지로서 어떤 강약점을 가지는가?
 
----
+### 분석 방법
+- 상관관계 분석
+- 시계열 분석
+- 회귀 모델
+- 시각화 및 지도 매핑
 
-## 데이터 구성
+## Git Commit 규칙
 
-* 강원도 신재생 에너지 발전량 데이터 (연도별 / 에너지원별)
-* 태양광·풍력·수력 관련 기상 데이터 (일사량, 풍속 등)
-* 스마트 그린도시 사업 정책 자료 및 예산 집행 데이터
-* 전국 단위 신재생 에너지 발전 데이터 (비교 분석용)
-
-데이터는 공공데이터 포털 및 정부·지자체 공개 자료를 기반으로 수집하며, 일부 데이터는 웹 크롤링을 통해 보완합니다.
-
----
-
-## 기술 스택
-
-* **Language**: Python 3.14
-* **Data Processing**: Pandas, NumPy
-* **Visualization**: Matplotlib, Seaborn
-* **Map Visualization**: Folium
-* **Web Crawling**: Selenium, BeautifulSoup
-* **Version Control**: GitHub
-
----
-
-## 프로젝트 구조(예시)
-
-```
-project/
-├─ data/
-│  ├─ raw/          # 원본 데이터
-│  └─ processed/    # 전처리 데이터
-├─ notebooks/       # 분석 노트북
-├─ src/             # 분석 및 시각화 코드
-├─ outputs/         # 결과물 (그래프, 지도 등)
-├─ README.md
-└─ requirements.txt
-```
-
----
-
-## Commit Convention
-
-본 프로젝트는 **Conventional Commit 규칙**을 따릅니다.
-
-### 커밋 메시지 형식
-
-```
-type: 변경 내용 요약
-```
-
-### Commit Types
-
-* **feat**: 새로운 기능 추가
-* **fix**: 버그 수정
-* **docs**: 문서 수정 (README, 보고서 등)
-* **style**: 코드 스타일 수정 (로직 변경 없음)
-* **refactor**: 코드 리팩토링 (기능 변화 없음)
-* **test**: 테스트 코드 추가/수정
-* **chore**: 설정, 기타 작업
+### Conventional Commits 사용
+- `feat:` 새로운 기능 추가
+- `fix:` 버그 수정
+- `docs:` 문서 수정
+- `style:` 코드 스타일 변경
+- `refactor:` 코드 리팩토링
 
 ### 예시
-
-```
-feat: 강원도 발전량 시계열 분석 추가
-fix: 연도별 발전량 집계 오류 수정
-docs: README 커밋 규칙 추가
+```bash
+git commit -m "feat: 강원도 발전량 시계열 분석 추가"
+git commit -m "fix: 연도별 발전량 집계 오류 수정"
 ```
 
----
+## 일정
 
-## 프로젝트 일정
+- **1단계** (12.15~12.17): 주제 선정, 계획 수립
+- **2단계** (12.17~12.24): 데이터 수집 및 전처리
+- **3단계** (12.24~01.07): 데이터 분석 및 시각화
+- **4단계** (01.07~01.12): 결과 검증 및 보고서 작성
+- **최종** (01.13): 결과 발표
 
-* **2025.12.15 ~ 12.17**: 주제 선정 및 프로젝트 계획 수립
-* **2025.12.17 ~ 12.24**: 데이터 수집 및 전처리
-* **2025.12.24 ~ 2026.01.07**: 데이터 분석 및 시각화 구현
-* **2026.01.07 ~ 01.12**: 결과 검증 및 정리
-* **2026.01.13**: 최종 결과 발표
+## 문의사항
+- GitHub Issues 활용
+- Slack 채널: #kdt-re-analysis
 
----
-
-## 기대 효과
-
-* 강원도 신재생 에너지 산업의 현황과 성장 가능성에 대한 데이터 기반 인사이트 제공
-* RE100 산업 유치를 위한 정책·산업 전략 수립 참고 자료 확보
-* 데이터 분석 및 시각화 역량 강화
-
----
-
-본 프로젝트는 학습 및 분석 목적의 프로젝트이며, 데이터 및 분석 결과는 참고 자료로 활용됩니다.
+## 라이선스
+MIT License
