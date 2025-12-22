@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4306387e18152f7c2bb7a4d331f177b4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4306387e18152f7c2bb7a4d331f177b4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4306387e18152f7c2bb7a4d331f177b4 = L.map(
+                "map_4306387e18152f7c2bb7a4d331f177b4",
+                {
+                    center: [37.8228, 128.1555],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fb634a547c05e1ec6390332fbe57103b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fb634a547c05e1ec6390332fbe57103b.addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_8d3330939faec933750cce8defeba24d = L.marker(
+                [37.8813, 127.7298],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_6c920eda9385d616756d047afa0210f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50ef0592373ac56aa2f2dcdbf3b7f2a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_80d0812d07bc21328cac8a35964d826a = $(`<div id="html_80d0812d07bc21328cac8a35964d826a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">춘천시</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 145.2 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 23.5 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 89.3 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 258.0 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1245 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2156 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 2.3 m/s</p>     </div>     </div>`)[0];
+                popup_50ef0592373ac56aa2f2dcdbf3b7f2a4.setContent(html_80d0812d07bc21328cac8a35964d826a);
+            
+        
+
+        marker_8d3330939faec933750cce8defeba24d.bindPopup(popup_50ef0592373ac56aa2f2dcdbf3b7f2a4)
+        ;
+
+        
+    
+    
+            marker_8d3330939faec933750cce8defeba24d.bindTooltip(
+                `<div>
+                     춘천시
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8d3330939faec933750cce8defeba24d.setIcon(icon_6c920eda9385d616756d047afa0210f1);
+            
+    
+            var circle_9910c19aeece879538caf64c0efc3df6 = L.circle(
+                [37.8813, 127.7298],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12900.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_6fe51c3a5168605a40a2ad06cf049f84 = L.marker(
+                [37.3422, 127.9202],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_69fb9e3245ab544001a423d5ba624a23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31289854173566619d4ba06ee66ff004 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3848b22711f9af0616283d5bf3378433 = $(`<div id="html_3848b22711f9af0616283d5bf3378433" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">원주시</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 198.7 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 15.2 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 34.1 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 248.0 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1189 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2234 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 2.1 m/s</p>     </div>     </div>`)[0];
+                popup_31289854173566619d4ba06ee66ff004.setContent(html_3848b22711f9af0616283d5bf3378433);
+            
+        
+
+        marker_6fe51c3a5168605a40a2ad06cf049f84.bindPopup(popup_31289854173566619d4ba06ee66ff004)
+        ;
+
+        
+    
+    
+            marker_6fe51c3a5168605a40a2ad06cf049f84.bindTooltip(
+                `<div>
+                     원주시
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6fe51c3a5168605a40a2ad06cf049f84.setIcon(icon_69fb9e3245ab544001a423d5ba624a23);
+            
+    
+            var circle_61ea82f5b766ef4ea9726d554dc184be = L.circle(
+                [37.3422, 127.9202],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12399.999999999998, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_1238c5d36237edde8d79aa0d80fa6b07 = L.marker(
+                [37.7519, 128.876],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_5acf49a565ca6e4eea4d0e63b4fe4437 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba29d8f18f246dae8002ebe861ff978d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_039233b9cf630aa5808dc074f248ff8c = $(`<div id="html_039233b9cf630aa5808dc074f248ff8c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">강릉시</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 176.4 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 145.8 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 12.3 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 334.5 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1398 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2401 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 3.8 m/s</p>     </div>     </div>`)[0];
+                popup_ba29d8f18f246dae8002ebe861ff978d.setContent(html_039233b9cf630aa5808dc074f248ff8c);
+            
+        
+
+        marker_1238c5d36237edde8d79aa0d80fa6b07.bindPopup(popup_ba29d8f18f246dae8002ebe861ff978d)
+        ;
+
+        
+    
+    
+            marker_1238c5d36237edde8d79aa0d80fa6b07.bindTooltip(
+                `<div>
+                     강릉시
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1238c5d36237edde8d79aa0d80fa6b07.setIcon(icon_5acf49a565ca6e4eea4d0e63b4fe4437);
+            
+    
+            var circle_8e363e5f85f9ea23aeb17cf2d98626ae = L.circle(
+                [37.7519, 128.876],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16725.000000000004, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_a73973354c20b4292de916172029c23d = L.marker(
+                [37.5247, 129.1143],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_2b706c7fca52a95871d58a5973daeb1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b698f999af391cc496fcdb9e011991ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_699de2542ea5c65b7366d2044c09b191 = $(`<div id="html_699de2542ea5c65b7366d2044c09b191" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">동해시</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 89.3 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 78.5 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 5.2 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 173.0 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1312 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2345 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 3.5 m/s</p>     </div>     </div>`)[0];
+                popup_b698f999af391cc496fcdb9e011991ec.setContent(html_699de2542ea5c65b7366d2044c09b191);
+            
+        
+
+        marker_a73973354c20b4292de916172029c23d.bindPopup(popup_b698f999af391cc496fcdb9e011991ec)
+        ;
+
+        
+    
+    
+            marker_a73973354c20b4292de916172029c23d.bindTooltip(
+                `<div>
+                     동해시
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a73973354c20b4292de916172029c23d.setIcon(icon_2b706c7fca52a95871d58a5973daeb1f);
+            
+    
+            var circle_982e5b49d2c9d011b9e6d10be6935fed = L.circle(
+                [37.5247, 129.1143],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8650.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_69fdd503e641b72e3489202ef0bc11e3 = L.marker(
+                [37.164, 128.9856],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_5e980b89f005f81e0ef7664072603a27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79f771d9a8e6f7106c31033b2fe627d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_077c090942cea4c06ce754f282954dab = $(`<div id="html_077c090942cea4c06ce754f282954dab" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">태백시</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 67.8 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 198.3 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 15.7 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 281.8 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1456 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2089 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 4.2 m/s</p>     </div>     </div>`)[0];
+                popup_79f771d9a8e6f7106c31033b2fe627d4.setContent(html_077c090942cea4c06ce754f282954dab);
+            
+        
+
+        marker_69fdd503e641b72e3489202ef0bc11e3.bindPopup(popup_79f771d9a8e6f7106c31033b2fe627d4)
+        ;
+
+        
+    
+    
+            marker_69fdd503e641b72e3489202ef0bc11e3.bindTooltip(
+                `<div>
+                     태백시
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69fdd503e641b72e3489202ef0bc11e3.setIcon(icon_5e980b89f005f81e0ef7664072603a27);
+            
+    
+            var circle_3153fb0df26a41f380d6b522de5b0f35 = L.circle(
+                [37.164, 128.9856],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14090.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_0ff98fc605f8158df193b102242153e8 = L.marker(
+                [38.207, 128.5918],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_07e0d20539754a9b68785a70522b8be8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b16ba14e2b53b49d444fb54f7bf331eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e462a628a17f3cc6641ca95b434c4d44 = $(`<div id="html_e462a628a17f3cc6641ca95b434c4d44" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">속초시</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 92.1 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 56.4 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 8.9 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 157.4 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1423 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2278 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 3.2 m/s</p>     </div>     </div>`)[0];
+                popup_b16ba14e2b53b49d444fb54f7bf331eb.setContent(html_e462a628a17f3cc6641ca95b434c4d44);
+            
+        
+
+        marker_0ff98fc605f8158df193b102242153e8.bindPopup(popup_b16ba14e2b53b49d444fb54f7bf331eb)
+        ;
+
+        
+    
+    
+            marker_0ff98fc605f8158df193b102242153e8.bindTooltip(
+                `<div>
+                     속초시
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ff98fc605f8158df193b102242153e8.setIcon(icon_07e0d20539754a9b68785a70522b8be8);
+            
+    
+            var circle_809e0c05349e2ae9d41ed2463873a866 = L.circle(
+                [38.207, 128.5918],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7870.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_fff42a2903058b4e1435184c6f84ec87 = L.marker(
+                [37.45, 129.1658],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_55ef9e1e854db02326b236ac9fd5065b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8258366f1ae69200846944b000293f5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93666852073087b4fd7d9706cca59c9f = $(`<div id="html_93666852073087b4fd7d9706cca59c9f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">삼척시</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 134.5 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 167.9 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 45.6 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 348.0 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1367 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2312 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 3.9 m/s</p>     </div>     </div>`)[0];
+                popup_8258366f1ae69200846944b000293f5b.setContent(html_93666852073087b4fd7d9706cca59c9f);
+            
+        
+
+        marker_fff42a2903058b4e1435184c6f84ec87.bindPopup(popup_8258366f1ae69200846944b000293f5b)
+        ;
+
+        
+    
+    
+            marker_fff42a2903058b4e1435184c6f84ec87.bindTooltip(
+                `<div>
+                     삼척시
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fff42a2903058b4e1435184c6f84ec87.setIcon(icon_55ef9e1e854db02326b236ac9fd5065b);
+            
+    
+            var circle_c96a933cd28d90adc5d2a654a23a9b9d = L.circle(
+                [37.45, 129.1658],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17400.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_946f973aa5b4b421bc81ba8b0a9a09a7 = L.marker(
+                [37.6974, 127.8895],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_bf1004630376c742c05858fca6549aa5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_014ad18041a93193ce437117deae9285 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c66f647af270b71e2e25b78bc747bde = $(`<div id="html_0c66f647af270b71e2e25b78bc747bde" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">홍천군</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 156.8 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 34.2 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 123.4 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 314.4 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1398 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2145 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 2.5 m/s</p>     </div>     </div>`)[0];
+                popup_014ad18041a93193ce437117deae9285.setContent(html_0c66f647af270b71e2e25b78bc747bde);
+            
+        
+
+        marker_946f973aa5b4b421bc81ba8b0a9a09a7.bindPopup(popup_014ad18041a93193ce437117deae9285)
+        ;
+
+        
+    
+    
+            marker_946f973aa5b4b421bc81ba8b0a9a09a7.bindTooltip(
+                `<div>
+                     홍천군
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_946f973aa5b4b421bc81ba8b0a9a09a7.setIcon(icon_bf1004630376c742c05858fca6549aa5);
+            
+    
+            var circle_c812abef74494dee8395970e71b11934 = L.circle(
+                [37.6974, 127.8895],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15719.999999999998, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_4afd098bd0554ac6605298e1badc1b59 = L.marker(
+                [37.4828, 127.9844],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_3a4b9d59bfb0e48674e68df655e0595b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ea1d11b759a2a4ccdb5bb961aa2b19a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fba88242d0365876adda42616b3574e5 = $(`<div id="html_fba88242d0365876adda42616b3574e5" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">횡성군</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 112.3 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 21.5 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 67.8 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 201.6 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1289 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2198 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 2.2 m/s</p>     </div>     </div>`)[0];
+                popup_0ea1d11b759a2a4ccdb5bb961aa2b19a.setContent(html_fba88242d0365876adda42616b3574e5);
+            
+        
+
+        marker_4afd098bd0554ac6605298e1badc1b59.bindPopup(popup_0ea1d11b759a2a4ccdb5bb961aa2b19a)
+        ;
+
+        
+    
+    
+            marker_4afd098bd0554ac6605298e1badc1b59.bindTooltip(
+                `<div>
+                     횡성군
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4afd098bd0554ac6605298e1badc1b59.setIcon(icon_3a4b9d59bfb0e48674e68df655e0595b);
+            
+    
+            var circle_23828febe7123c0d6b979ecc1673a9b0 = L.circle(
+                [37.4828, 127.9844],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10080.000000000002, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_6ff9b0e3802ea1d33471f4cc69ca2989 = L.marker(
+                [37.1836, 128.4614],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_dbf17fa9ac918972699188d755924f57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67fcd4f5b897a7975a380dc0c3bd3a51 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6e764c3e55e8a01d8fc86363e376a1a = $(`<div id="html_a6e764c3e55e8a01d8fc86363e376a1a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">영월군</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 98.7 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 45.3 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 89.2 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 233.2 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1334 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2167 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 2.8 m/s</p>     </div>     </div>`)[0];
+                popup_67fcd4f5b897a7975a380dc0c3bd3a51.setContent(html_a6e764c3e55e8a01d8fc86363e376a1a);
+            
+        
+
+        marker_6ff9b0e3802ea1d33471f4cc69ca2989.bindPopup(popup_67fcd4f5b897a7975a380dc0c3bd3a51)
+        ;
+
+        
+    
+    
+            marker_6ff9b0e3802ea1d33471f4cc69ca2989.bindTooltip(
+                `<div>
+                     영월군
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ff9b0e3802ea1d33471f4cc69ca2989.setIcon(icon_dbf17fa9ac918972699188d755924f57);
+            
+    
+            var circle_1b6aa2545e64543a828d9160b788dce0 = L.circle(
+                [37.1836, 128.4614],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11660.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_b962188644ac12caf9918ff3ffc462ff = L.marker(
+                [37.3709, 128.3906],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_ef6c98150f2570ef3bea54c67d4ad68c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87749dfe091cac557d17a80c696496b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94a11eb76d4a624628348b635619418e = $(`<div id="html_94a11eb76d4a624628348b635619418e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">평창군</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 87.4 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 189.6 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 56.3 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 333.3 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1512 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2056 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 4.5 m/s</p>     </div>     </div>`)[0];
+                popup_87749dfe091cac557d17a80c696496b8.setContent(html_94a11eb76d4a624628348b635619418e);
+            
+        
+
+        marker_b962188644ac12caf9918ff3ffc462ff.bindPopup(popup_87749dfe091cac557d17a80c696496b8)
+        ;
+
+        
+    
+    
+            marker_b962188644ac12caf9918ff3ffc462ff.bindTooltip(
+                `<div>
+                     평창군
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b962188644ac12caf9918ff3ffc462ff.setIcon(icon_ef6c98150f2570ef3bea54c67d4ad68c);
+            
+    
+            var circle_dd3a642bfd33c4beac59517f3ca26143 = L.circle(
+                [37.3709, 128.3906],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16665.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_3192e5682ba08e7e41acd7b8e0dad08c = L.marker(
+                [37.3807, 128.6686],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_5365f00d57b63fa93810977eb8897dc7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6348816a343805e88a0abe4da2408f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3936b77bea65df1f62f432d281537fd8 = $(`<div id="html_3936b77bea65df1f62f432d281537fd8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">정선군</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 76.5 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 123.7 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 145.8 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 346.0 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1478 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2012 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 3.7 m/s</p>     </div>     </div>`)[0];
+                popup_a6348816a343805e88a0abe4da2408f0.setContent(html_3936b77bea65df1f62f432d281537fd8);
+            
+        
+
+        marker_3192e5682ba08e7e41acd7b8e0dad08c.bindPopup(popup_a6348816a343805e88a0abe4da2408f0)
+        ;
+
+        
+    
+    
+            marker_3192e5682ba08e7e41acd7b8e0dad08c.bindTooltip(
+                `<div>
+                     정선군
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3192e5682ba08e7e41acd7b8e0dad08c.setIcon(icon_5365f00d57b63fa93810977eb8897dc7);
+            
+    
+            var circle_af900ab506e44cadbb2691e9200a901e = L.circle(
+                [37.3807, 128.6686],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17300.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_40e2f6c00094aa0007662eab568af64c = L.marker(
+                [38.1467, 127.3136],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_9e87b4aea56f3c9af0f4c77eb3247735 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e4a74fae1381d9f4f729ba172457ad5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0dc433ed5cbf44599ccc28ba316d0357 = $(`<div id="html_0dc433ed5cbf44599ccc28ba316d0357" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">철원군</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 145.3 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 67.8 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 23.4 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 236.5 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1267 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2289 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 2.9 m/s</p>     </div>     </div>`)[0];
+                popup_4e4a74fae1381d9f4f729ba172457ad5.setContent(html_0dc433ed5cbf44599ccc28ba316d0357);
+            
+        
+
+        marker_40e2f6c00094aa0007662eab568af64c.bindPopup(popup_4e4a74fae1381d9f4f729ba172457ad5)
+        ;
+
+        
+    
+    
+            marker_40e2f6c00094aa0007662eab568af64c.bindTooltip(
+                `<div>
+                     철원군
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_40e2f6c00094aa0007662eab568af64c.setIcon(icon_9e87b4aea56f3c9af0f4c77eb3247735);
+            
+    
+            var circle_e92791ad980176889dda4d757a9e2642 = L.circle(
+                [38.1467, 127.3136],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11825.000000000002, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_d9512b96d5ad6ff462a41c065eb0d3be = L.marker(
+                [38.1063, 127.7084],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_c5d3cca4905561fbce5acbcc75b54592 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae47bad13ba19ef28c4cb4ecbd60ee71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_271effa9844f533aee80018ae223aed4 = $(`<div id="html_271effa9844f533aee80018ae223aed4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">화천군</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 89.6 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 34.5 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 234.7 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 358.8 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1389 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2134 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 2.6 m/s</p>     </div>     </div>`)[0];
+                popup_ae47bad13ba19ef28c4cb4ecbd60ee71.setContent(html_271effa9844f533aee80018ae223aed4);
+            
+        
+
+        marker_d9512b96d5ad6ff462a41c065eb0d3be.bindPopup(popup_ae47bad13ba19ef28c4cb4ecbd60ee71)
+        ;
+
+        
+    
+    
+            marker_d9512b96d5ad6ff462a41c065eb0d3be.bindTooltip(
+                `<div>
+                     화천군
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d9512b96d5ad6ff462a41c065eb0d3be.setIcon(icon_c5d3cca4905561fbce5acbcc75b54592);
+            
+    
+            var circle_dbe93419068b8ec95f2e2afb631ec005 = L.circle(
+                [38.1063, 127.7084],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17939.999999999996, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_fc00681985ffafe2f910c286bcf2e99c = L.marker(
+                [38.1098, 127.9897],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_5f22f3b0d81a960118f51b289ab79deb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6c5150898e84e1e9f0d1a8f37d25ff4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e3fb3d3e9a4ec9a121bb46bcc28f57d = $(`<div id="html_7e3fb3d3e9a4ec9a121bb46bcc28f57d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">양구군</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 67.8 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 45.6 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 78.9 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 192.3 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1356 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2101 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 2.7 m/s</p>     </div>     </div>`)[0];
+                popup_a6c5150898e84e1e9f0d1a8f37d25ff4.setContent(html_7e3fb3d3e9a4ec9a121bb46bcc28f57d);
+            
+        
+
+        marker_fc00681985ffafe2f910c286bcf2e99c.bindPopup(popup_a6c5150898e84e1e9f0d1a8f37d25ff4)
+        ;
+
+        
+    
+    
+            marker_fc00681985ffafe2f910c286bcf2e99c.bindTooltip(
+                `<div>
+                     양구군
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc00681985ffafe2f910c286bcf2e99c.setIcon(icon_5f22f3b0d81a960118f51b289ab79deb);
+            
+    
+            var circle_0730032b42773e431d7c66c624723440 = L.circle(
+                [38.1098, 127.9897],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9615.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_0f3a6cd2bdaedd963c0b8b446e9d8775 = L.marker(
+                [38.0695, 128.1706],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_69ae8d59513048e6ae5777e1f85310cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f330c0fc8ab79854830bad6136786bdc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6cfb75348fa104e7f320a215ee53c10 = $(`<div id="html_f6cfb75348fa104e7f320a215ee53c10" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">인제군</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 54.3 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 56.7 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 156.8 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 267.8 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1498 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2078 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 3.1 m/s</p>     </div>     </div>`)[0];
+                popup_f330c0fc8ab79854830bad6136786bdc.setContent(html_f6cfb75348fa104e7f320a215ee53c10);
+            
+        
+
+        marker_0f3a6cd2bdaedd963c0b8b446e9d8775.bindPopup(popup_f330c0fc8ab79854830bad6136786bdc)
+        ;
+
+        
+    
+    
+            marker_0f3a6cd2bdaedd963c0b8b446e9d8775.bindTooltip(
+                `<div>
+                     인제군
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0f3a6cd2bdaedd963c0b8b446e9d8775.setIcon(icon_69ae8d59513048e6ae5777e1f85310cb);
+            
+    
+            var circle_b3edc90e49f6b13c2f48d6dff7dcecb6 = L.circle(
+                [38.0695, 128.1706],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13390.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_15ef81c7554658a257b76d0245498f3a = L.marker(
+                [38.3806, 128.4692],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_34c75e17558a1f43fac9f592a321d192 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51efb14a49c4b32b33b82746f45c3a93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae21418e53134f70c052b3b50d26802d = $(`<div id="html_ae21418e53134f70c052b3b50d26802d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">고성군</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 98.5 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 89.3 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 12.4 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 200.2 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1401 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2267 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 3.4 m/s</p>     </div>     </div>`)[0];
+                popup_51efb14a49c4b32b33b82746f45c3a93.setContent(html_ae21418e53134f70c052b3b50d26802d);
+            
+        
+
+        marker_15ef81c7554658a257b76d0245498f3a.bindPopup(popup_51efb14a49c4b32b33b82746f45c3a93)
+        ;
+
+        
+    
+    
+            marker_15ef81c7554658a257b76d0245498f3a.bindTooltip(
+                `<div>
+                     고성군
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15ef81c7554658a257b76d0245498f3a.setIcon(icon_34c75e17558a1f43fac9f592a321d192);
+            
+    
+            var circle_b6e48b5b079c055fd4715a32e54408c0 = L.circle(
+                [38.3806, 128.4692],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10010.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var marker_bf044068d8a4fea5689d8c2da5652e04 = L.marker(
+                [38.075, 128.619],
+                {
+}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+    
+            var icon_585f45ca07467d57ef65f7c9a4469939 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0caf28d8a9da74b2dd19161a0c62bcd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0f2a1577055da5ea9163be77bbc3b90 = $(`<div id="html_d0f2a1577055da5ea9163be77bbc3b90" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Malgun Gothic; width: 250px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">양양군</h4>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0;"><b>🔆 태양광:</b> 87.9 GWh</p>         <p style="margin: 5px 0;"><b>💨 풍력:</b> 112.5 GWh</p>         <p style="margin: 5px 0;"><b>💧 수력:</b> 23.6 GWh</p>         <p style="margin: 5px 0;"><b>⚡ 총 발전량:</b> 224.0 GWh</p>         <hr style="margin: 5px 0;">         <p style="margin: 5px 0; font-size: 11px;">🌧️ 강수량: 1445 mm</p>         <p style="margin: 5px 0; font-size: 11px;">☀️ 일조량: 2234 hr</p>         <p style="margin: 5px 0; font-size: 11px;">🌬️ 풍속: 3.6 m/s</p>     </div>     </div>`)[0];
+                popup_e0caf28d8a9da74b2dd19161a0c62bcd.setContent(html_d0f2a1577055da5ea9163be77bbc3b90);
+            
+        
+
+        marker_bf044068d8a4fea5689d8c2da5652e04.bindPopup(popup_e0caf28d8a9da74b2dd19161a0c62bcd)
+        ;
+
+        
+    
+    
+            marker_bf044068d8a4fea5689d8c2da5652e04.bindTooltip(
+                `<div>
+                     양양군
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf044068d8a4fea5689d8c2da5652e04.setIcon(icon_585f45ca07467d57ef65f7c9a4469939);
+            
+    
+            var circle_398883a68979d3a387ee29cfec55965a = L.circle(
+                [38.075, 128.619],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11200.0, "stroke": true, "weight": 2}
+            ).addTo(map_4306387e18152f7c2bb7a4d331f177b4);
+        
+</script>
+</html>
