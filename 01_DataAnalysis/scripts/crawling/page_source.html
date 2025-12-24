@@ -1,0 +1,2654 @@
+<html lang="ko" style="--table_width: 2850px;"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="한국에너지공단 신재생에너지센터">
+<meta name="keywords" content="한국에너지공단 신재생에너지센터">
+<title>신·재생에너지센터 | 자료실 | 통계자료 | 보급통계 | 지역별 발전량(기초)</title>
+<link rel="stylesheet" href="/biz/common/css/default.css">
+<link rel="stylesheet" href="/biz/common/css/default.css" media="print">
+<link href="/biz/common/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+<script src="/biz/common/js/jquery-1.11.0.min.js"></script>
+<script src="/biz/common/js/design.js"></script>
+<script src="/biz/common/js/swiper-bundle.min.js"></script>
+<script src="/biz/common/js/calendar.js"></script>
+<script src="/biz/common/js/plugin/tooltip.js"></script>
+<script src="/biz/common/js/plugin/utility.js"></script>
+<script src="/biz/common/js/module/param.js"></script>
+<script src="/biz/common/js/module/hash.js"></script>
+<script src="/biz/common/js/module/dynamicTable.js"></script>
+<script src="/biz/common/js/common.js"></script>
+<script src="/biz/common/js/input_chk.js"></script>
+<script src="/biz/common/js/frameLayer.js"></script>
+<script src="/biz/common/js/jquery-ui.min.js"></script>
+<script src="/biz/common/js/jquery-ui-i18n.min.js"></script>	
+<script src="/biz/common/js/jquery.rwdImageMaps.min.js"></script>	
+<script src="/biz/common/js/cookie.js"></script>
+
+<script>
+
+	/*function fn_tag_in(value){
+			
+		if(value == "1"){
+			
+			$("#searchword").val("설치의무화");			
+			$("#searchform").submit();
+			
+		}else if(value == "2"){
+			
+			$("#searchword").val("주택지원사업");			
+			$("#searchform").submit();
+			
+		}else if(value == "3"){
+			
+			$("#searchword").val("사후관리");			
+			$("#searchform").submit();
+		}
+	}*/
+
+	function fn_tag_in(value){	
+		
+		/*$.ajax({
+			type : "POST", 
+			url : "/biz/search/total_search.do",
+		    type: "GET",
+			data : {"searchword" : value},
+			dataType : "text"
+			success : function(result){
+				location.href="/biz/search/total_search.do";
+			}	
+		});*/
+		location.href ="/biz/search/total_search.do?searchword="+value;
+	};
+	
+	
+	/*function fn_search_submit(){
+		console.log();
+		$("#searchform").submit();
+	}*/
+	
+	function fn_search_submit(){	
+		
+		var searchword = $("#searchword").val();
+		/*$.ajax({
+			type : "POST", 
+			url : "/biz/search/total_search.do",
+			data : {"searchword" : searchword},
+			dataType : "text",
+			success : function(result){
+				location.href="/biz/search/total_search.do";
+			}	
+		});*/
+		location.href ="/biz/search/total_search.do?searchword="+searchword;
+	};
+	
+	function fn_ready(){
+		alert("현재 준비 중입니다.");
+	};
+	
+</script>
+
+</head>
+
+
+<body>
+<div class="skip_cont">
+	<a href="#gnb">주메뉴 바로가기</a>
+	<a href="#content">본문 바로가기</a>
+	<a href="#footer">푸터 바로가기</a>
+</div>
+
+<!--body_wrap-->
+<div class="body_wrap">
+
+	<!--common_wrapper-->
+	<div class="common_wrap">
+		
+		<a href="javascript:;" class="btn_chat"><img src="/biz/images/common/ico_chat.png" alt="챗봇 민원상담 이미지"></a>
+		
+		<!--header_wrapper-->
+		<div class="header_wrap">
+		
+			<!--header_inner-->
+			<div class="header_inner fix">
+				<ul class="header_inner_top fix">
+					<li class="header_top_btn"><a href="https://www.energy.or.kr" target="_blank" title="새창열림">한국에너지공단</a></li>
+					<li class="header_top_num"><span>신재생에너지 콜센터 <em>1855-3020</em></span></li>
+					<li class="header_top_num"><span>태양광 피해상담 센터 <em>1670-4260</em></span></li>
+					<li class="header_top_num"><span>고장접수지원센터 <em>1544-0940</em></span></li>
+				</ul>
+				<div class="header_inner_bott">
+					<h1><a href="/biz/main/main.do"><img src="/biz/images/common/logo.png" alt="한국에너지공단 신재생에너지센터"></a></h1>
+					
+					<!-- 모바일 상단 버튼 -->
+					<div class="m_header_btn">
+						<a href="javascript:;" class="m_search_btn"><span>검색버튼</span></a>
+						<a href="javascript:;" class="m_menu_btn"><span>모바일 메뉴 버튼</span></a>
+					</div>
+					<!--// 모바일 상단 버튼 -->
+					
+					<!--pc_gnb_wrap-->
+					<div class="gnb_wrap pc_menu_wrap" id="gnb">
+						<ul class="gnb_dep01 fix">
+							<li>
+								<a href="javascript:void(0);">주요사업</a>
+								<div class="gnb_dep02_wrap">
+									<p class="gnb_dep02_tit type01"><span>주요사업</span></p>
+									<ul class="gnb_dep02 fix sty03_03">
+										<li>
+											<a href="javascript:;"><span>신재생에너지 보급확대</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_engy/intro_home.do?gubun=A"><span>주택지원</span></a></li>
+												<li><a href="/biz/introduce/new_engy/intro_build.do?gubun=A"><span>건물지원</span></a></li>
+												<li><a href="/biz/introduce/new_engy/intro_cvg.do?gubun=A"><span>융복합지원</span></a></li>
+												<li><a href="/biz/introduce/new_engy/intro_region.do?gubun=A"><span>확대기반조성사업</span></a></li>
+												<li><a href="/biz/introduce/new_engy/intro_solar.do?gubun=A"><span>태양광대여사업</span></a></li>
+												<li><a href="/biz/introduce/new_fin/intro_fin.do?gubun=A"><span>금융지원사업</span></a></li>
+												<!-- <li><a href="/biz/introduce/new_fin/intro_citizen.do?gubun=A"><span>주민참여자금</span></a></li>
+												<li><a href="/biz/introduce/new_fin/intro_green.do?gubun=A"><span>녹색보증사업</span></a></li> -->
+												<li><a href="/biz/introduce/new_engy/inst_conf.do?gubun=A"><span>설치확인</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_govinstall.do?gubun=A"><span>공공기관 설치의무화제도</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_rfs.do?gubun=A"><span>RFS</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>정책 및 통계</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_policy/plan4tdus.do?gubun=A"><span>기술개발 및 이용·보급 기본계획</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_eips.do?gubun=A"><span>전력정보화 및 정책지원사업</span></a></li>
+												<li><a href="/biz/introduce/new_policy/policy_support.do?gubun=A"><span>정책지원</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_kre100.do?gubun=A"><span>재생e 사용 확인</span></a></li>
+												<li><a href="/biz/introduce/new_policy/statistics.do?gubun=A"><span>통계</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>RPS</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_rps/intro_rps.do?gubun=A"><span>RPS</span></a></li>
+												
+												<li><a href="/biz/introduce/new_rps/intro_price.do?gubun=A"><span>고정가격계약 입찰제도</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>대국민 정보제공</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_comm/educontent.do?gubun=A"><span>신재생에너지 교육콘텐츠 기획운영</span></a></li>
+												<li><a href="/biz/introduce/new_comm/onestop.do?gubun=A"><span>재생에너지 클라우드 플랫폼</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>신재생에너지 산업기반 구축</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_ib/intro_offshorewind_support.do?gubun=A"><span>공공주도 대규모 해상풍력 단지개발 지원</span></a></li>
+												<li><a href="/biz/introduce/new_ib/wfri.do?gubun=A"><span>풍력전후방 인프라구축</span></a></li>
+												<li><a href="/biz/introduce/new_ib/wtci.do?gubun=A"><span>풍력시험인증 인프라구축</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_nwppsd.do?gubun=A"><span>풍력발전합동지원반</span></a></li>
+												<!-- <li><a href="/biz/introduce/new_ib/intro_sunshine_dure.do?gubun=A"><span>햇빛두레 사업</span></a></li> -->
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>신재생에너지 설비 인증 및 검증</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_cert/intro_standard.do?gubun=B"><span>신재생에너지 표준화 및 인증고도화</span></a></li>
+												<li><a href="/biz/introduce/new_cert/intro_energyks.do?gubun=A"><span>신재생에너지설비 KS인증</span></a></li>
+												<li><a href="/biz/introduce/new_cert/intro_turbineks.do?gubun=A"><span>중대형 풍력터빈 KS인증</span></a></li>
+												<li><a href="/biz/introduce/new_cert/intro_co2verif.do?gubun=A"><span>탄소검증제</span></a></li>
+												<li><a href="/biz/introduce/new_cert/const_standard.do?gubun=A"><span>신재생에너지설비 시공기준</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_energysafety.do?gubun=A"><span>신재생에너지설비 안전관리</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/biz/faq/faq_main.do">FAQ 및 질문하기</a>
+								<div class="gnb_dep02_wrap" style="display: none;">
+									<p class="gnb_dep02_tit type01"><span>FAQ 및 질문하기</span></p>
+									<ul class="gnb_dep02 fix sty03_03">
+										<li>
+											<a href="javascript:;"><span>신재생에너지 보급확대</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010100"><span>주택지원</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010200"><span>건물지원</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010300"><span>융복합지원</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010400"><span>확대기반조성사업</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010500"><span>태양광대여사업</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010600"><span>금융지원사업</span></a></li>
+											<!-- 	<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&depth_2=A010700"><span>주민참여자금</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&depth_2=A010800"><span>녹색보증사업</span></a></li> -->
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010900"><span>설치확인</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A011200"><span>공공기관 설치의무화제도</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A011300"><span>RFS</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>정책 및 통계</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A020000&amp;depth_2=A020100"><span>기술개발 및 이용·보급 기본계획</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A020000&amp;depth_2=A020200"><span>전력정보화 및 정책지원사업</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A020000&amp;depth_2=A020300"><span>정책지원</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A020000&amp;depth_2=A020400"><span>재생e 사용 확인</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A020000&amp;depth_2=A020500"><span>통계</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>RPS</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A030000&amp;depth_2=A030100"><span>RPS</span></a></li>
+												
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A030000&amp;depth_2=A030300"><span>고정가격계약 입찰제도</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>대국민 정보제공</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A040000&amp;depth_2=A040100"><span>신재생에너지 교육콘텐츠 기획운영</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A040000&amp;depth_2=A040200"><span>재생에너지 클라우드 플랫폼</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>신재생에너지 산업기반 구축</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A060000&amp;depth_2=A060100"><span>공공주도 대규모 해상풍력 단지개발 지원</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A060000&amp;depth_2=A060200"><span>풍력전후방 인프라구축</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A060000&amp;depth_2=A060300"><span>풍력시험인증 인프라구축</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A060000&amp;depth_2=A060400"><span>풍력발전합동지원반</span></a></li>
+												<!-- <li><a href="/biz/faq/faq_list02.do?depth_1=A060000&depth_2=A060500"><span>햇빛두레 사업</span></a></li> -->
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>신재생에너지 설비 인증 및 검증</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050100"><span>신재생에너지 표준화 및 인증고도화</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050200"><span>신재생에너지설비 KS인증</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050300"><span>중대형 풍력터빈 KS인증</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050400"><span>탄소검증제</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050500"><span>신재생설비 시공기준</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050600"><span>신재생에너지설비 안전관리</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">자료실</a>
+								<div class="gnb_dep02_wrap">
+									<p class="gnb_dep02_tit type03"><span>자료실</span></p>
+									<ul class="gnb_dep02 fix sty04">
+										<li>
+											<a href="/biz/pds/notice/list.do"><span>알림/뉴스</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/pds/notice/list.do"><span>공지사항</span></a></li>
+												<li><a href="/biz/pds/businoti/list.do"><span>사업공고</span></a></li>
+												<li><a href="/biz/pds/news/list.do"><span>보도자료</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="/biz/pds/related/list.do"><span>관계법령</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/pds/related/list.do"><span>(구)관계법령</span></a></li>
+												<li><a href="/biz/pds/decree/list.do"><span>관계법령</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="/biz/pds/statistic/list.do"><span>통계자료</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/pds/statistic/list.do"><span>통계자료</span></a></li>
+												<li>
+													<a href="/biz/statistics/supply/supply01_01_list.do"><span>보급통계</span></a>
+													<ul class="gnb_dep04">
+														<li><a href="/biz/statistics/supply/supply01_01_list.do"><span>생산량</span></a></li>
+														<li><a href="/biz/statistics/supply/supply02_01_list.do"><span>발전량</span></a></li>
+														<li><a href="/biz/statistics/supply/supply03_01_list.do"><span>누적 보급용량</span></a></li>
+														<li><a href="/biz/statistics/supply/supply04_01_list.do"><span>신규 보급용량</span></a></li>
+													</ul>
+												</li>
+												<li><a href="/biz/statistics/industry/industry02.do"><span>산업통계</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="/biz/pds/photo/list.do"><span>종합자료실</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/pds/photo/list.do"><span>포토갤러리</span></a></li>
+												<li><a href="/biz/pds/dictionary/list.do"><span>용어사전</span></a></li>
+												<li><a href="/biz/pds/failure/list.do"><span>불합격사례</span></a></li>
+												<li><a href="/biz/pds/pds/list.do"><span>일반자료실</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">신재생E코리아</a>
+								<div class="gnb_dep02_wrap">
+									<p class="gnb_dep02_tit type04"><span>신재생E코리아</span></p>
+									<ul class="gnb_dep02 fix sty04">
+										<li>
+											<a href="/biz/korea/intro/kor_solar.do"><span>신재생에너지원별 소개</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/korea/intro/kor_solar.do"><span>태양광</span></a></li>
+												<li><a href="/biz/korea/intro/kor_heat.do"><span>태양열</span></a></li>
+												<li><a href="/biz/korea/intro/kor_wind.do"><span>풍력</span></a></li>
+												<li><a href="/biz/korea/intro/kor_geo.do"><span>지열</span></a></li>
+												<li><a href="/biz/korea/intro/kor_water.do"><span>수력</span></a></li>
+												<li><a href="/biz/korea/intro/kor_water_heat.do"><span>수열</span></a></li>
+												<li><a href="/biz/korea/intro/kor_sea.do"><span>해양</span></a></li>
+												<li><a href="/biz/korea/intro/kor_hydro.do"><span>수소</span></a></li>
+												<li><a href="/biz/korea/intro/kor_fuel.do"><span>연료전지</span></a></li>
+												<li><a href="/biz/korea/intro/kor_bio.do"><span>바이오</span></a></li>
+												<li><a href="/biz/korea/intro/kor_waste.do"><span>폐기물</span></a></li>
+												<li><a href="/biz/korea/intro/kor_gas.do"><span>석탄가스/액화</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="/biz/korea/book/list.do"><span>홍보마당</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/korea/board/list.do"><span>신재생 국내외 동향</span></a></li>
+												<li><a href="/biz/korea/briefing/list.do"><span>신재생에너지 브리핑</span></a></li>
+												<li><a href="/biz/korea/exhibition/list.do"><span>해외 재생에너지 전시회</span></a></li>
+												<li><a href="/biz/korea/book/list.do"><span>홍보책자</span></a></li>
+												<!-- <li><a href="/biz/korea/cardnews/list.do"><span>카드뉴스</span></a></li> -->
+												<!-- <li><a href="/biz/korea/truth/view.do"><span>오해와진실</span></a></li> -->
+											</ul>
+										</li>
+										<li>
+											<a href="/biz/korea/prevention/list.do"><span>신재생설비 안전관리 및 피해예방</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/korea/prevention/list.do"><span>신재생사업 피해예방</span></a></li>
+												<li><a href="/biz/korea/safety/list.do"><span>신재생설비 안전관리</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">센터소개</a>
+								<div class="gnb_dep02_wrap">
+									<p class="gnb_dep02_tit type05"><span>센터소개</span></p>
+									<ul class="gnb_dep02 fix sty04">
+										<li><a href="/biz/center/center_info/center_pm.do"><span>인사말</span></a></li>
+										<li><a href="/biz/center/center_info/center_his.do"><span>설립배경 및 연혁</span></a></li>
+										<li><a href="/biz/center/org/org_total.do"><span>조직도</span></a></li>
+										<li><a href="/biz/center/center_info/center_navi.do"><span>찾아오시는길</span></a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--//pc_gnb_wrap-->
+					
+					<!--m_gnb_wrap-->
+					<div class="gnb_wrap m_menu_wrap">
+						<div class="m_gnb_top">
+							<a class="m_close"><span>모바일 메뉴 닫기</span></a>
+						</div>
+						<ul class="gnb_dep01 fix">
+							<li>
+								<a href="javascript:;">주요사업</a>
+								<div class="gnb_dep02_wrap" style="display: none;">
+									<ul class="gnb_dep02 fix sty04">
+										<li>
+											<a href="javascript:;"><span>신재생에너지 보급확대</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_engy/intro_home.do?gubun=A"><span>주택지원</span></a></li>
+												<li><a href="/biz/introduce/new_engy/intro_build.do?gubun=A"><span>건물지원</span></a></li>
+												<li><a href="/biz/introduce/new_engy/intro_cvg.do?gubun=A"><span>융복합지원</span></a></li>
+												<li><a href="/biz/introduce/new_engy/intro_region.do?gubun=A"><span>확대기반조성사업</span></a></li>
+												<li><a href="/biz/introduce/new_engy/intro_solar.do?gubun=A"><span>태양광대여사업</span></a></li>
+												<li><a href="/biz/introduce/new_fin/intro_fin.do?gubun=A"><span>금융지원사업</span></a></li>
+												<!-- <li><a href="/biz/introduce/new_fin/intro_citizen.do?gubun=A"><span>주민참여자금</span></a></li>
+												<li><a href="/biz/introduce/new_fin/intro_green.do?gubun=A"><span>녹색보증사업</span></a></li> -->
+												<li><a href="/biz/introduce/new_engy/inst_conf.do?gubun=A"><span>설치확인</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_govinstall.do?gubun=A"><span>공공기관 설치의무화제도</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_rfs.do?gubun=A"><span>RFS</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>정책 및 통계</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_policy/plan4tdus.do?gubun=A"><span>기술개발 및 이용·보급 기본계획</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_eips.do?gubun=A"><span>전력정보화 및 정책지원사업</span></a></li>
+												<li><a href="/biz/introduce/new_policy/policy_support.do?gubun=A"><span>정책지원</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_kre100.do?gubun=A"><span>재생e 사용 확인</span></a></li>
+												<li><a href="/biz/introduce/new_policy/statistics.do?gubun=A"><span>통계</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>RPS</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_rps/intro_rps.do?gubun=A"><span>RPS</span></a></li>
+												
+												<li><a href="/biz/introduce/new_rps/intro_price.do?gubun=A"><span>고정가격계약 입찰제도</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>대국민 정보제공</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_comm/educontent.do?gubun=A"><span>신재생에너지 교육콘텐츠 기획운영</span></a></li>
+												<li><a href="/biz/introduce/new_comm/onestop.do?gubun=A"><span>재생에너지 클라우드 플랫폼</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>신재생에너지 산업기반 구축</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_ib/intro_offshorewind_support.do?gubun=A"><span>공공주도 대규모 해상풍력 단지개발 지원</span></a></li>
+												<li><a href="/biz/introduce/new_ib/wfri.do?gubun=A"><span>풍력전후방 인프라구축</span></a></li>
+												<li><a href="/biz/introduce/new_ib/wtci.do?gubun=A"><span>풍력시험인증 인프라구축</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_nwppsd.do?gubun=A"><span>풍력발전합동지원반</span></a></li>
+												<!-- <li><a href="/biz/introduce/new_ib/intro_sunshine_dure.do?gubun=A"><span>햇빛두레 사업</span></a></li> -->
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>신재생에너지 설비 인증 및 검증</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/introduce/new_cert/intro_standard.do?gubun=B"><span>신재생에너지 표준화 및 인증고도화</span></a></li>
+												<li><a href="/biz/introduce/new_cert/intro_energyks.do?gubun=A"><span>신재생에너지설비 KS인증</span></a></li>
+												<li><a href="/biz/introduce/new_cert/intro_turbineks.do?gubun=A"><span>중대형 풍력터빈 KS인증</span></a></li>
+												<li><a href="/biz/introduce/new_cert/intro_co2verif.do?gubun=A"><span>탄소검증제</span></a></li>
+												<li><a href="/biz/introduce/new_cert/const_standard.do?gubun=A"><span>신재생에너지설비 시공기준</span></a></li>
+												<li><a href="/biz/introduce/new_policy/intro_energysafety.do?gubun=A"><span>신재생에너지설비 안전관리</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">FAQ 및 질문하기</a>
+								<div class="gnb_dep02_wrap" style="display: none;">
+									<ul class="gnb_dep02 fix sty04">
+										<li>
+											<a href="javascript:;"><span>신재생에너지 보급확대</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010100"><span>주택지원</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010200"><span>건물지원</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010300"><span>융복합지원</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010400"><span>확대기반조성사업</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010500"><span>태양광대여사업</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010600"><span>금융지원사업</span></a></li>
+												<!-- <li><a href="/biz/faq/faq_list02.do?depth_1=A010000&depth_2=A010700"><span>주민참여자금</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&depth_2=A010800"><span>녹색보증사업</span></a></li> -->
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010900"><span>설치확인</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A011200"><span>공공기관 설치의무화제도</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A011300"><span>RFS</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>정책 및 통계</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A020000&amp;depth_2=A020100"><span>기술개발 및 이용·보급 기본계획</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A020000&amp;depth_2=A020200"><span>전력정보화 및 정책지원사업</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A020000&amp;depth_2=A020300"><span>정책지원</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A020000&amp;depth_2=A020400"><span>재생e 사용 확인</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A020000&amp;depth_2=A020500"><span>통계</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>RPS</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A030000&amp;depth_2=A030100"><span>RPS</span></a></li>
+												
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A030000&amp;depth_2=A030300"><span>고정가격계약 입찰제도</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>대국민 정보제공</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A040000&amp;depth_2=A040100"><span>신재생에너지 교육콘텐츠 기획운영</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A040000&amp;depth_2=A040200"><span>재생에너지 클라우드 플랫폼</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>신재생에너지 산업기반 구축</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A060000&amp;depth_2=A060100"><span>공공주도 대규모 해상풍력 단지개발 지원</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A060000&amp;depth_2=A060200"><span>풍력전후방 인프라구축</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A060000&amp;depth_2=A060300"><span>풍력시험인증 인프라구축</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A060000&amp;depth_2=A060400"><span>풍력발전합동지원반</span></a></li>
+												<!-- <li><a href="/biz/faq/faq_list02.do?depth_1=A060000&depth_2=A060500"><span>햇빛두레 사업</span></a></li> -->
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>신재생에너지 설비 인증 및 검증</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050100"><span>신재생에너지 표준화 및 인증고도화</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050200"><span>신재생에너지설비 KS인증</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050300"><span>중대형 풍력터빈 KS인증</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050400"><span>탄소검증제</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050500"><span>신재생설비 시공기준</span></a></li>
+												<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050600"><span>신재생에너지설비 안전관리</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;">자료실</a>
+								<div class="gnb_dep02_wrap" style="display: none;">
+									<ul class="gnb_dep02 fix sty04">
+										<li>
+											<a href="javascript:;"><span>알림/뉴스</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/pds/notice/list.do"><span>공지사항</span></a></li>
+												<li><a href="/biz/pds/businoti/list.do"><span>사업공고</span></a></li>
+												<li><a href="/biz/pds/news/list.do"><span>보도자료</span></a></li>
+											</ul>
+										</li>
+										<li>
+										<a href="javascript:;"><span>관계법령</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/pds/related/list.do"><span>(구)관계법령</span></a></li>
+												<li><a href="/biz/pds/decree/list.do"><span>관계법령</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>통계자료</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/pds/statistic/list.do"><span>통계자료</span></a></li>
+												<li>
+													<a href="/biz/statistics/supply/supply01_01_list.do"><span>보급통계</span></a>
+													<ul class="gnb_dep04">
+														<li><a href="/biz/statistics/supply/supply01_01_list.do"><span>생산량</span></a></li>
+														<li><a href="/biz/statistics/supply/supply02_01_list.do"><span>발전량</span></a></li>
+														<li><a href="/biz/statistics/supply/supply03_01_list.do"><span>누적 보급용량</span></a></li>
+														<li><a href="/biz/statistics/supply/supply04_01_list.do"><span>신규 보급용량</span></a></li>
+													</ul>
+												</li>
+												<li><a href="/biz/statistics/industry/industry02.do"><span>산업통계</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>종합자료실</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/pds/photo/list.do"><span>포토갤러리</span></a></li>
+												<li><a href="/biz/pds/dictionary/list.do"><span>용어사전</span></a></li>
+												<li><a href="/biz/pds/failure/list.do"><span>불합격사례</span></a></li>
+												<li><a href="/biz/pds/pds/list.do"><span>일반자료실</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;">신재생E코리아</a>
+								<div class="gnb_dep02_wrap" style="display: none;">
+									<ul class="gnb_dep02 fix sty03">
+										<li>
+											<a href="javascript:;"><span>신재생에너지원별 소개</span></a>
+											<ul class="gnb_dep03">
+												<!-- <li><a href="/biz/korea/intro/kor_intro.do"><span>신재생에너지원별 소개</span></a></li> -->
+												<li><a href="/biz/korea/intro/kor_solar.do"><span>태양광</span></a></li>
+												<li><a href="/biz/korea/intro/kor_heat.do"><span>태양열</span></a></li>
+												<li><a href="/biz/korea/intro/kor_wind.do"><span>풍력</span></a></li>
+												<li><a href="/biz/korea/intro/kor_geo.do"><span>지열</span></a></li>
+												<li><a href="/biz/korea/intro/kor_water.do"><span>수력</span></a></li>
+												<li><a href="/biz/korea/intro/kor_water_heat.do"><span>수열</span></a></li>
+												<li><a href="/biz/korea/intro/kor_sea.do"><span>해양</span></a></li>
+												<li><a href="/biz/korea/intro/kor_hydro.do"><span>수소</span></a></li>
+												<li><a href="/biz/korea/intro/kor_fuel.do"><span>연료전지</span></a></li>
+												<li><a href="/biz/korea/intro/kor_bio.do"><span>바이오</span></a></li>
+												<li><a href="/biz/korea/intro/kor_waste.do"><span>폐기물</span></a></li>
+												<li><a href="/biz/korea/intro/kor_gas.do"><span>석탄가스/액화</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>홍보마당</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/korea/board/list.do"><span>신재생 국내외 동향</span></a></li>
+												<li><a href="/biz/korea/briefing/list.do"><span>신재생에너지 브리핑</span></a></li>
+												<li><a href="/biz/korea/exhibition/list.do"><span>해외 재생에너지 전시회</span></a></li>
+												<li><a href="/biz/korea/book/list.do"><span>홍보책자</span></a></li>
+												<!-- <li><a href="/biz/korea/cardnews/list.do"><span>카드뉴스</span></a></li> -->
+												<!-- <li><a href="/biz/korea/truth/view.do"><span>오해와진실</span></a></li> -->
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:;"><span>신재생설비 안전관리 및 피해예방</span></a>
+											<ul class="gnb_dep03">
+												<li><a href="/biz/korea/prevention/list.do"><span>신재생사업 피해예방</span></a></li>
+												<li><a href="/biz/korea/safety/list.do"><span>신재생설비 안전관리</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;">센터소개</a>
+								<div class="gnb_dep02_wrap" style="display: none;">
+									<ul class="gnb_dep02 fix sty04">
+										<li><a href="/biz/center/center_info/center_pm.do"><span>인사말</span></a></li>										
+										<li><a href="/biz/center/center_info/center_his.do"><span>설립배경 및 연혁</span></a></li>
+										<li>
+											<a href="javascript:;"><span>조직도</span></a>
+											<ul class="gnb_dep03"> 
+												<li><a href="/biz/center/org/org_total.do"><span>조직도 전체보기</span></a></li>
+												<li><!-- <a href="/biz/center/org/list.do?depth_1=B010100&depth_2=B010101"><span>조직도 상세</span></a> --></li>
+											</ul>
+										</li>
+										<li>
+											<a href="/biz/center/center_info/center_navi.do"><span>찾아오시는길</span></a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--//m_gnb_wrap-->
+					
+					<a href="javascript:void(0);" class="btn_sitemap ico_menu"><span>사이트맵</span></a>
+				</div>
+			</div>
+			<!--//header_inner-->
+			
+		</div>
+		<!--//header_wrap-->
+		
+		<!--btn_call-->
+		<!-- <a href="javascript:;" class="btn_call_center"><span>통합콜센터</span></a> -->
+		<!--//btn_call-->
+		
+		<!--sub_wrap-->
+		<div class="sub_wrap">
+			
+			<!--sub_top-->
+			<div class="sub_top">
+				
+				<div class="sub_top_inner">
+					<form id="searchform" name="searchform" action="/biz/search/total_search.do">						
+					<div class="sub_top_search fix">
+						<p class="sub_search_tit"><label for="searchword">검색하기</label></p>
+						<p class="sub_search_box"><input type="text" name="searchword" id="searchword" placeholder="무엇을 찾으시나요?" title="무엇을 찾으시나요?" maxlength="30"><input type="submit" aria-label="검색"></p>
+						<ul class="sub_search_tag fix">
+							<li><a href="javascript:;" onclick="fn_tag_in('설치의무화제도')">#설치의무화제도</a></li>
+							<li><a href="javascript:;" onclick="fn_tag_in('주택지원사업')">#주택지원사업</a></li>
+							<li><a href="javascript:;" onclick="fn_tag_in('사후관리')">#사후관리</a></li>
+						</ul>
+						<a href="/biz/search/total_search.do?gubun=A" class="sub_search_add">더보기</a>
+					</div>
+					</form>
+					
+				</div>
+				
+			</div>
+			
+			<!--//sub_top-->
+			<!-- //lnb 영역 확장,접힘 상태표시 -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					// 모든 .lnb_dep01 > li > a 요소를 선택합니다.
+					const menuLinks = document.querySelectorAll('.lnb_dep01 > li > a');
+
+					menuLinks.forEach(function (link, index) {
+						// 링크의 다음 형제 요소가 ul.lnb_dep02인지 확인합니다.
+						const submenu = link.nextElementSibling;
+						if (submenu && submenu.classList.contains('lnb_dep02')) {
+							// 서브메뉴에 고유한 ID를 부여합니다.
+							const submenuId = `submenu-`;
+							submenu.setAttribute('id', submenuId);
+
+							// 초기 상태 설정
+							const isExpanded = link.classList.contains('on');
+							link.setAttribute('aria-expanded', isExpanded);
+							link.setAttribute('aria-controls', submenuId);
+							link.setAttribute('title', isExpanded ? '확장됨' : '축소됨');
+
+							// 클릭 이벤트 리스너 추가
+							link.addEventListener('click', function (event) {
+								event.preventDefault(); // 기본 동작 방지
+
+								const currentlyExpanded = link.getAttribute('aria-expanded') === 'true';
+
+								// 모든 서브메뉴를 닫고 aria-expanded를 false로 설정
+								menuLinks.forEach(function (otherLink) {
+									const otherSubmenu = otherLink.nextElementSibling;
+									if (otherSubmenu && otherSubmenu.classList.contains('lnb_dep02')) {
+										otherSubmenu.style.display = 'none';
+										otherLink.setAttribute('aria-expanded', 'false');
+										otherLink.setAttribute('title', '축소됨');
+										otherLink.classList.remove('on');
+									}
+								});
+
+								if (!currentlyExpanded) {
+									// 클릭한 링크의 서브메뉴를 열고 aria-expanded를 true로 설정
+									submenu.style.display = 'block';
+									link.setAttribute('aria-expanded', 'true');
+									link.setAttribute('title', '확장됨');
+									link.classList.add('on');
+								}
+							});
+						}
+					});
+				});
+
+
+			</script>
+			
+			
+			<!--//sub_top-->
+			
+			<!-- lnb -->
+			
+			<!--// lnb -->
+			
+			
+<script type="text/javascript" src="../../common/js/common.js"></script>
+<script type="text/javascript" src="../../common/js/statistics.js"></script>
+<script type="text/javascript" src="../../common/js/highcharts/highcharts.js"></script>
+<script type="text/javascript" src="../../common/js/highcharts/data.js"></script>
+<script type="text/javascript" src="../../common/js/highcharts/drilldown.js"></script>
+<script type="text/javascript" src="../../common/js/highcharts/exporting.js"></script>
+<script type="text/javascript" src="../../common/js/highcharts/export-data.js"></script>
+<script type="text/javascript" src="../../common/js/highcharts/accessibility.js"></script>
+<script type="text/javascript">
+let loca_arr = new Array();
+let energy_arr = new Array();
+
+$(document).ready(function() {
+	fn_Map_REGIONAL();
+	fn_setTableWidth("19");
+	
+	
+		loca_arr.push("춘천시");
+	
+		loca_arr.push("원주시");
+	
+		loca_arr.push("강릉시");
+	
+		loca_arr.push("동해시");
+	
+		loca_arr.push("태백시");
+	
+		loca_arr.push("속초시");
+	
+		loca_arr.push("삼척시");
+	
+		loca_arr.push("홍천군");
+	
+		loca_arr.push("횡성군");
+	
+		loca_arr.push("영월군");
+	
+		loca_arr.push("평창군");
+	
+		loca_arr.push("정선군");
+	
+		loca_arr.push("철원군");
+	
+		loca_arr.push("화천군");
+	
+		loca_arr.push("양구군");
+	
+		loca_arr.push("인제군");
+	
+		loca_arr.push("고성군");
+	
+		loca_arr.push("양양군");
+	
+		loca_arr.push("기타");
+	
+	
+	
+		energy_arr.push("SOLAR_L");
+	
+		energy_arr.push("WIND");
+	
+		energy_arr.push("WATER");
+	
+		energy_arr.push("OCEAN");
+	
+		energy_arr.push("BIO");
+	
+		energy_arr.push("WASTE");
+	
+		energy_arr.push("CELL");
+	
+		energy_arr.push("IGCC");
+	
+	
+	HighchartsData.set_categories(loca_arr);
+	//하이차트 데이터
+	HighchartsData.series = [{ name:"태양광", data : [107863, 180828, 151529, 34478, 84259, 12895, 146124, 179488, 86110, 144953, 160372, 102049, 220454, 118207, 111935, 142052, 165040, 30015, 2928]}, { name:"풍력", data : [31, 0, 85838, 0, 332719, 6, 31874, 0, 89781, 400, 354255, 54251, 0, 6, 39, 2140, 0, 1659, 1666]}, { name:"수력", data : [880403, 0, 1904, 33274, 0, 0, 11554, 771, 4705, 0, 0, 14411, 1073, 213233, 278, 1789, 803, 5118, 0]}, { name:"해양", data : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, { name:"바이오", data : [3224, 6136, 1636597, 203969, 0, 3198, 30648, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, { name:"재생폐기물", data : [2153, 11157, 0, 0, 45, 647, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 0]}, { name:"연료전지", data : [338, 335, 128, 150199, 0, 0, 6, 0, 32, 124447, 569, 0, 0, 0, 0, 0, 0, 0, 26]}, { name:"IGCC", data : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}];
+	//그래프 커서
+	StackedColumn.tooltip.formatter = function fn_formatter(){
+		var val = fn_numberFormat(this.point.y);
+		var str = "";
+		str += this.point.category + "<br>";
+		str += "<span style=\"color:" + this.point.color + "\">\u25CF</span>" + this.point.series.name + " : <b>" + val + " MWh</b><br>";
+		return str;
+	};
+	//스택막대그래프 총합 수치 표시 설정
+	StackedColumn.yAxis.stackLabels.enabled = false; //표시 안함
+	//그래프 series 데이터 표시 설정
+	StackedColumn.plotOptions = {
+		column: { stacking: 'normal' },
+		series : {				
+			dataLabels : { enabled : false }
+		}
+	};
+	//그래프 단위 표시
+	StackedColumn.subtitle = {
+        text: '(단위: GWh)',
+        align: 'left',
+        verticalAlign: 'top',
+        y: 10
+    };
+	//그래프 y축 단위
+	StackedColumn.yAxis.labels = {
+		formatter : function() {
+			var val = String(this.value/ 1000).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+			return val;
+		}
+    };
+	HighchartsData.Call_chart("발전량","StackedColumn","container1");
+	
+	// 지역 선택여부 확인
+    var selectedNames = $("input[name='BASIC_LG']:checked").map(function () {
+        return $(this).attr("title");
+    }).get();
+
+    // 선택된 지역없으면 전체 지역명 가져오기
+    if (selectedNames.length === 0) {
+        selectedNames = $("input[name='BASIC_LG']").map(function () {
+            return $(this).attr("title");
+        }).get();
+    }
+
+    var combinedNames = selectedNames.join(",");
+	
+    // 캡션값 설정
+    $("#table_caption").text(combinedNames + " 발전량(기초)에 관련된 표로 연도, 지역, 에너지원, 기초지자체 로 구성되어있다.");
+});
+
+function fn_set_yyyy(obj){
+	var year = (new Date()).getFullYear();
+	var html = "";
+	
+	for (var i = 2015; i <= year; i++) {
+		html += "<option value='"+ i +"'";
+		if (i == "2022") {
+			html += "selected='selected'";
+		}
+		html += ">"+ i +"년</option>";
+	}
+	obj.append(html);
+};
+
+//지도 옆 표 데이터
+function fn_MapHover(LOCA_CODE){
+	var loca_ele = $(event.target).parent().parent();
+	if(loca_ele.prop("tagName") == "A" && loca_ele.attr("title") == undefined){
+		$(".lv1").children('a').removeAttr("title");
+		$(".lv2").children('a').removeAttr("title");
+		$(".lv3").children('a').removeAttr("title");
+		loca_ele.prop("title","선택됨");
+	}
+	
+	var Ca = /\+/g;
+	var YYYY = $("#yyyy").val();
+	var PLOCA_CODE = "42";
+	
+	$.ajax({
+		type : "POST", 
+		url : "./supply02_03_mapchart_data.do",
+		data : {"YYYY" : YYYY,
+			"PLOCA_CODE" : PLOCA_CODE,
+			"LOCA_CODE" : LOCA_CODE},
+		dataType : "text",
+		success : function(result) {
+			var data = $.parseJSON( decodeURIComponent( result.replace(Ca, " ") ) );
+			$("#MAPCHART_LOCA_NAME").text(data.LOCA_NAME);
+			$("#MAPCHART_SOLAR_L").text(data.SOLAR_L);
+			$("#MAPCHART_WIND").text(data.WIND);
+			$("#MAPCHART_WATER").text(data.WATER);
+			$("#MAPCHART_OCEAN").text(data.OCEAN);
+			$("#MAPCHART_BIO").text(data.BIO);
+			$("#MAPCHART_WASTE").text(data.WASTE);
+			$("#MAPCHART_CELL").text(data.CELL);
+			$("#MAPCHART_IGCC").text(data.IGCC);
+			$("#MAPCHART_TOTAL_NRN").text(data.TOTAL_NRN);
+		},
+		error : function(error) {
+	        //alert("Error!");
+	    }	
+	});
+};
+
+//지도 옆 표 데이터(광역)
+function fn_Map_REGIONAL(){
+	
+	var Ca = /\+/g;
+	var YYYY = $("#yyyy").val();
+	var LOCA_CODE = "42";
+	
+	$.ajax({
+		type : "POST", 
+		url : "./supply02_02_mapchart_data.do",
+		data : {"YYYY" : YYYY,
+			"LOCA_CODE" : LOCA_CODE},
+		dataType : "text",
+		success : function(result) {
+			var data = $.parseJSON( decodeURIComponent( result.replace(Ca, " ") ) );
+			$("#MAPCHART_LOCA_NAME").text(data.LOCA_NAME);
+			$("#MAPCHART_SOLAR_L").text(data.SOLAR_L);
+			$("#MAPCHART_WIND").text(data.WIND);
+			$("#MAPCHART_WATER").text(data.WATER);
+			$("#MAPCHART_OCEAN").text(data.OCEAN);
+			$("#MAPCHART_BIO").text(data.BIO);
+			$("#MAPCHART_WASTE").text(data.WASTE);
+			$("#MAPCHART_CELL").text(data.CELL);
+			$("#MAPCHART_IGCC").text(data.IGCC);
+			$("#MAPCHART_TOTAL_NRN").text(data.TOTAL_NRN);
+		},
+		error : function(error) {
+	        //alert("Error!");
+	    }	
+	});
+};
+
+//전체선택 버튼 이벤트
+function fn_AllCheckClick(obj, target){
+	if(obj.checked){
+		$("input[name='"+target+"']").prop("checked",true);
+	}else{
+		$("input[name='"+target+"']").prop("checked",false);
+	}
+};
+
+//검색
+function fn_Search(){
+	$("#form").attr("action","./supply02_03_list.do");
+	$("#form").submit();
+};
+//엑셀다운로드
+function fn_excel_down(){
+	$("#form").attr("action","./supply02_03_excel.do");
+	$("#form").submit();
+};
+
+function fn_switch(flag){
+	if(flag == 1){
+		$("#btn_graph").prop("title","선택됨");
+		$("#btn_table").removeAttr("title");
+		$("#graph").prop("style","");
+		$("#table").prop("style","display : none;");
+	}
+	if(flag == 2){
+		$("#btn_graph").removeAttr("title");
+		$("#btn_table").prop("title","선택됨");
+		$("#graph").prop("style","display : none;");
+		$("#table").prop("style","");	
+	}
+};
+</script>
+
+<script>
+	// 표 포커스시 키보드제어
+
+	$(function() {
+    // .m_scroll.on 클릭 시 클래스 제거
+    $('.m_scroll.on').click(function(){
+        $(this).removeClass('on');
+    });
+
+    // .m_scroll.on에 대해 Enter 키를 눌렀을 때 클래스 제거
+    $('.m_scroll.on').keydown(function(event){
+        if (event.key === 'Enter') {
+            $(this).removeClass('on');
+        }
+    });
+
+    // .m_scroll02.on 클릭 시 클래스 제거
+    $('.m_scroll02.on').click(function(){
+        $(this).removeClass('on');
+    });
+
+    // .m_scroll02.on에 대해 Enter 키를 눌렀을 때 클래스 제거
+    $('.m_scroll02.on').keydown(function(event){
+        if (event.key === 'Enter') {
+            $(this).removeClass('on');
+        }
+    });
+});
+
+</script>
+<div class="container_section">
+
+	<!-- lnb -->
+	<div class="lnb_wrap">
+		<div class="lnb_inner fix">
+			<a href="/biz/main/main.do" class="lnb_home"><span>메인으로 이동</span></a>
+			<ul class="lnb_dep01 fix">
+				<li><a href="javascript:;" aria-expanded="false" aria-controls="submenu-" title="축소됨"><span>자료실</span></a>
+					<ul class="lnb_dep02" style="display: none;" id="submenu-">
+						<li><a href="/biz/introduce/new_engy/intro_home.do"><span>주요사업</span></a></li>
+						<li><a href="/biz/faq/faq_main.do"><span>FAQ 및 질문하기</span></a></li>
+						<li><a href="/biz/pds/notice/list.do"><span>자료실</span></a></li>
+						<li><a href="/biz/korea/intro/kor_solar.do"><span>신재생E코리아</span></a></li>
+						<li><a href="/biz/center/center_info/center_pm.do"><span>센터소개</span></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" aria-expanded="false" aria-controls="submenu-" title="축소됨"><span>통계자료</span></a>
+					<ul class="lnb_dep02" style="display: none;" id="submenu-">
+						<li><a href="/biz/pds/notice/list.do"><span>알림/뉴스</span></a></li>
+						<li><a href="/biz/pds/related/list.do"><span>관계법령</span></a></li>
+						<li><a href="/biz/pds/statistic/list.do"><span>통계자료</span></a></li>
+						<li><a href="/biz/pds/photo/list.do"><span>종합자료실</span></a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;" aria-expanded="false" aria-controls="submenu-" title="축소됨"><span>보급통계</span></a>
+					<ul class="lnb_dep02" style="display: none;" id="submenu-">
+						<li><a href="/biz/pds/statistic/list.do"><span>통계자료</span></a></li>
+						<li><a href="/biz/statistics/supply/supply01_01_list.do"><span>보급통계</span></a></li>
+						<li><a href="/biz/statistics/industry/industry02.do"><span>산업통계</span></a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;" aria-expanded="false" aria-controls="submenu-" title="축소됨"><span>발전량</span></a>
+					<ul class="lnb_dep02" style="display: none;" id="submenu-">
+						<li><a href="/biz/statistics/supply/supply01_01_list.do"><span>생산량</span></a></li>
+						<li><a href="/biz/statistics/supply/supply02_01_list.do"><span>발전량</span></a></li>
+						<li><a href="/biz/statistics/supply/supply03_01_list.do"><span>누적 보급용량</span></a></li>
+						<li><a href="/biz/statistics/supply/supply04_01_list.do"><span>신규 보급용량</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--// lnb -->
+
+	<!--sub_cont_wrap-->
+	<div class="sub_cont_wrap" id="content">
+		<div class="sub_cont_inner">
+			<div class="sub_tit_top fix">
+				<div class="tit_list" style="display:flex;justify-content: space-between;align-items: center;">
+					<h3 class="sub_tit_h3 fix">보급통계 발전량</h3>
+					<div style="display:flex; gap:24px;">
+						<a href="javascript:fn_Print();"><img src="/biz/images/common/ico_print.png" alt="프린트 버튼"></a>
+						<div style="display:flex; gap:10px;">
+							<a href="javascript:fn_ZoomIn();"><img src="/biz/images/common/ico_pluse.png" alt="화면확대 버튼"></a>
+							<a href="javascript:fn_ZoomOut();"><img src="/biz/images/common/ico_minus.png" alt="화면축소 버튼"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 탭 메뉴 -->
+			<div class="tab_sty02 sty03">
+				<ul class="fix">
+					<li><a href="/biz/statistics/supply/supply02_01_list.do">연도별 발전량</a></li>
+					<li><a href="/biz/statistics/supply/supply02_02_list.do">지역별 발전량(광역)</a></li>
+					<li class="on"><a title="현재선택됨" href="/biz/statistics/supply/supply02_03_list.do">지역별 발전량(기초)</a></li>
+				</ul>
+			</div>
+
+			<div class="sub_content">
+				<!-- 지도 -->
+				<div class="map_img_cont">
+					<div class="map_cont_left">
+					<p class="map_tit_blue">2022년 지역별 신재생에너지 발전량(1천MWh)</p>
+						<div class="map_left_inner">
+							<div class="map_wrap map_scroll m_scroll on">
+								<div class="map_gangwon"><ul class="map_inner"><li class="lv3 map_gangwon01" onmouseover="fn_MapHover('42110')"><a href="javascript:void(0);"><dl><dt>춘천시</dt><dd class="">994</dd></dl></a></li><li class="lv3 map_gangwon02" onmouseover="fn_MapHover('42130')"><a href="javascript:void(0);"><dl><dt>원주시</dt><dd class="">198</dd></dl></a></li><li class="lv3 map_gangwon03" onmouseover="fn_MapHover('42150')"><a href="javascript:void(0);"><dl><dt>강릉시</dt><dd class="">1,876</dd></dl></a></li><li class="lv3 map_gangwon04" onmouseover="fn_MapHover('42170')"><a href="javascript:void(0);" title="선택됨"><dl><dt>동해시</dt><dd class="">422</dd></dl></a></li><li class="lv3 map_gangwon05" onmouseover="fn_MapHover('42190')"><a href="javascript:void(0);"><dl><dt>태백시</dt><dd class="sty03">417</dd></dl></a></li><li class="lv2 map_gangwon06" onmouseover="fn_MapHover('42210')"><a href="javascript:void(0);"><dl><dt>속초시</dt><dd class="">17</dd></dl></a></li><li class="lv3 map_gangwon07" onmouseover="fn_MapHover('42230')"><a href="javascript:void(0);"><dl><dt>삼척시</dt><dd class="">220</dd></dl></a></li><li class="lv3 map_gangwon08" onmouseover="fn_MapHover('42720')"><a href="javascript:void(0);"><dl><dt>홍천군</dt><dd class="">180</dd></dl></a></li><li class="lv3 map_gangwon09" onmouseover="fn_MapHover('42730')"><a href="javascript:void(0);"><dl><dt>횡성군</dt><dd class="">181</dd></dl></a></li><li class="lv3 map_gangwon10" onmouseover="fn_MapHover('42750')"><a href="javascript:void(0);"><dl><dt>영월군</dt><dd class="">270</dd></dl></a></li><li class="lv3 map_gangwon11" onmouseover="fn_MapHover('42760')"><a href="javascript:void(0);"><dl><dt>평창군</dt><dd class="">515</dd></dl></a></li><li class="lv3 map_gangwon12" onmouseover="fn_MapHover('42770')"><a href="javascript:void(0);"><dl><dt>정선군</dt><dd class="">171</dd></dl></a></li><li class="lv3 map_gangwon13" onmouseover="fn_MapHover('42780')"><a href="javascript:void(0);"><dl><dt>철원군</dt><dd class="">222</dd></dl></a></li><li class="lv3 map_gangwon14" onmouseover="fn_MapHover('42790')"><a href="javascript:void(0);"><dl><dt>화천군</dt><dd class="">331</dd></dl></a></li><li class="lv3 map_gangwon15" onmouseover="fn_MapHover('42800')"><a href="javascript:void(0);"><dl><dt>양구군</dt><dd class="">112</dd></dl></a></li><li class="lv3 map_gangwon16" onmouseover="fn_MapHover('42810')"><a href="javascript:void(0);"><dl><dt>인제군</dt><dd class="">146</dd></dl></a></li><li class="lv3 map_gangwon17" onmouseover="fn_MapHover('42820')"><a href="javascript:void(0);"><dl><dt>고성군</dt><dd class="">166</dd></dl></a></li><li class="lv2 map_gangwon18" onmouseover="fn_MapHover('42830')"><a href="javascript:void(0);"><dl><dt>양양군</dt><dd class="">37</dd></dl></a></li></ul></div>
+							</div>
+						</div>
+					</div>
+					<div class="map_cont_right">
+					<p class="map_tit_blue">2022년 <span id="MAPCHART_LOCA_NAME">동해시</span> 신재생에너지 발전량(MWh)</p>
+						<div class="table_list">
+							<table class="height540">
+								<caption>신재생에너지 생산량(toe)에 관련된 표로 태양열, 태양광, 풍력, 수력, 해양, 지열, 수열, 바이오, 재생폐기물, 연료전지, IGCC, 합계 로 구성되어있다.</caption>
+								<colgroup>
+									<col style="width: 115px">
+									<col style="width: calc(100% - 115px);">
+								</colgroup>
+								<thead>
+								</thead>
+								<tbody>
+									<tr>
+										<th>태양광</th>
+										<td><span id="MAPCHART_SOLAR_L">34,478</span></td>
+									</tr>
+									<tr>
+										<th>풍력</th>
+										<td><span id="MAPCHART_WIND">-</span></td>
+									</tr>
+									<tr>
+										<th>수력</th>
+										<td><span id="MAPCHART_WATER">33,274</span></td>
+									</tr>
+									<tr>
+										<th>해양</th>
+										<td><span id="MAPCHART_OCEAN">-</span></td>
+									</tr>
+									<tr>
+										<th>바이오</th>
+										<td><span id="MAPCHART_BIO">203,969</span></td>
+									</tr>
+									<tr>
+										<th>재생폐기물</th>
+										<td><span id="MAPCHART_WASTE">-</span></td>
+									</tr>
+									<tr>
+										<th>연료전지</th>
+										<td><span id="MAPCHART_CELL">150,199</span></td>
+									</tr>
+									<tr>
+										<th>IGCC</th>
+										<td><span id="MAPCHART_IGCC">-</span></td>
+									</tr>
+									<tr>
+										<th>합계</th>
+										<td><span id="MAPCHART_TOTAL_NRN">421,919</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 검색창 -->
+				<div class="search_cont">
+					<form action="./supply02_03_list.do" method="POST" name="form" id="form">
+						<input type="hidden" name="CSRFToken" value="o0NQLxEMzceSJ49echGUzAQ5K9i5OiAHsb1FdGwihwOpQhxafh">
+						<div class="search_sec">
+							<div class="search_sec_top">
+								<p class="search_sec_tit">연도 선택</p>
+							</div>
+							<select id="yyyy" name="yyyy" class="select_box" title="연도 선택">
+								
+								<option value="2021">2021년</option>
+								
+								<option value="2022" selected="">2022년</option>
+								
+								<option value="2023">2023년</option>
+								
+							</select>
+						</div>
+						<div class="search_sec">
+							<div class="search_sec_top">
+								<p class="search_sec_tit">지역 선택</p>
+							</div>
+							<select id="REGIONAL_LG" name="REGIONAL_LG" class="select_box" title="지역 선택" onchange="fn_Search();">
+								
+									
+								
+									
+									<option value="11">서울</option>
+									
+								
+									
+									<option value="26">부산</option>
+									
+								
+									
+									<option value="27">대구</option>
+									
+								
+									
+									<option value="28">인천</option>
+									
+								
+									
+									<option value="29">광주</option>
+									
+								
+									
+									<option value="30">대전</option>
+									
+								
+									
+									<option value="31">울산</option>
+									
+								
+									
+									<option value="36">세종</option>
+									
+								
+									
+									<option value="41">경기</option>
+									
+								
+									
+									<option value="42" selected="">강원</option>
+									
+								
+									
+									<option value="43">충북</option>
+									
+								
+									
+									<option value="44">충남</option>
+									
+								
+									
+									<option value="45">전북</option>
+									
+								
+									
+									<option value="46">전남</option>
+									
+								
+									
+									<option value="47">경북</option>
+									
+								
+									
+									<option value="48">경남</option>
+									
+								
+									
+									<option value="50">제주</option>
+									
+								
+							</select>
+						</div>
+						<div class="search_sec">
+							<div class="search_sec_top">
+								<p class="search_sec_tit">에너지원 선택</p>
+								<div class="check_box">
+									<label for="input_check1"><input type="checkbox" id="input_check1" name="" title="전체 선택" onchange="fn_AllCheckClick(this, 'energy');">전체 선택</label>
+								</div>
+							</div>
+							<div class="search_sec_bott">
+								<div class="check_box">
+									
+										<input type="checkbox" name="energy" id="energy_0" title="태양광s" value="SOLAR_L">
+										<label for="energy_0">태양광</label>
+									
+										<input type="checkbox" name="energy" id="energy_1" title="풍력s" value="WIND">
+										<label for="energy_1">풍력</label>
+									
+										<input type="checkbox" name="energy" id="energy_2" title="수력s" value="WATER">
+										<label for="energy_2">수력</label>
+									
+										<input type="checkbox" name="energy" id="energy_3" title="해양s" value="OCEAN">
+										<label for="energy_3">해양</label>
+									
+										<input type="checkbox" name="energy" id="energy_4" title="바이오s" value="BIO">
+										<label for="energy_4">바이오</label>
+									
+										<input type="checkbox" name="energy" id="energy_5" title="재생폐기물s" value="WASTE">
+										<label for="energy_5">재생폐기물</label>
+									
+										<input type="checkbox" name="energy" id="energy_6" title="연료전지s" value="CELL">
+										<label for="energy_6">연료전지</label>
+									
+										<input type="checkbox" name="energy" id="energy_7" title="IGCCs" value="IGCC">
+										<label for="energy_7">IGCC</label>
+									
+								</div>
+							</div>
+						</div>
+						<div class="search_sec">
+							<div class="search_sec_top">
+								<p class="search_sec_tit">기초지자체 선택</p>
+								<div class="check_box">
+									<label for="input_check2"><input type="checkbox" id="input_check2" name="" title="전체 선택" onchange="fn_AllCheckClick(this, 'BASIC_LG');">전체 선택</label>
+								</div>
+							</div>
+							<div class="search_sec_bott">
+								<div class="check_box">
+									
+										<label for="BASIC_LG_0"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_0" title="강릉시" value="42150">
+											강릉시</label>
+									
+										<label for="BASIC_LG_1"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_1" title="고성군" value="42820">
+											고성군</label>
+									
+										<label for="BASIC_LG_2"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_2" title="동해시" value="42170">
+											동해시</label>
+									
+										<label for="BASIC_LG_3"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_3" title="삼척시" value="42230">
+											삼척시</label>
+									
+										<label for="BASIC_LG_4"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_4" title="속초시" value="42210">
+											속초시</label>
+									
+										<label for="BASIC_LG_5"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_5" title="양구군" value="42800">
+											양구군</label>
+									
+										<label for="BASIC_LG_6"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_6" title="양양군" value="42830">
+											양양군</label>
+									
+										<label for="BASIC_LG_7"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_7" title="영월군" value="42750">
+											영월군</label>
+									
+										<label for="BASIC_LG_8"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_8" title="원주시" value="42130">
+											원주시</label>
+									
+										<label for="BASIC_LG_9"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_9" title="인제군" value="42810">
+											인제군</label>
+									
+										<label for="BASIC_LG_10"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_10" title="정선군" value="42770">
+											정선군</label>
+									
+										<label for="BASIC_LG_11"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_11" title="철원군" value="42780">
+											철원군</label>
+									
+										<label for="BASIC_LG_12"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_12" title="춘천시" value="42110">
+											춘천시</label>
+									
+										<label for="BASIC_LG_13"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_13" title="태백시" value="42190">
+											태백시</label>
+									
+										<label for="BASIC_LG_14"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_14" title="평창군" value="42760">
+											평창군</label>
+									
+										<label for="BASIC_LG_15"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_15" title="홍천군" value="42720">
+											홍천군</label>
+									
+										<label for="BASIC_LG_16"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_16" title="화천군" value="42790">
+											화천군</label>
+									
+										<label for="BASIC_LG_17"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_17" title="횡성군" value="42730">
+											횡성군</label>
+									
+										<label for="BASIC_LG_18"><input type="checkbox" name="BASIC_LG" id="BASIC_LG_18" title="기타" value="42999">
+											기타</label>
+									
+								</div>
+							</div>
+						</div>
+						<div class="search_sec_btn">
+							<input type="button" value="검색" class="btn_sty02" onclick="fn_Search();">
+							<input type="button" value="엑셀다운로드" class="btn_sty01" onclick="fn_excel_down();">
+						</div>
+					</form>
+				</div>
+				<!-- 검색창 끝 -->
+				<ul class="chart_table_btn">
+					<li><input type="button" id="btn_graph" value="그래프" onclick="fn_switch(1);"></li>
+					<li><input type="button" id="btn_table" value="표" onclick="fn_switch(2);"></li>
+				</ul>
+				<!-- 하이차트 컨테이너 -->
+				<div class="cont_highchart" id="graph">
+					<div id="container1" data-highcharts-chart="0" aria-hidden="false" role="region" aria-label="Chart. Highcharts interactive chart." style="overflow: hidden;"><div id="highcharts-screen-reader-region-before-0" aria-hidden="false" style="position: relative;"><div aria-hidden="false" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"><p>Chart</p><div>Bar chart with 8 data series.</div><div>(단위: GWh)</div><div><button id="hc-linkto-highcharts-data-table-0" tabindex="-1" aria-expanded="false">View as data table, Chart</button></div><div>The chart has 1 X axis displaying categories. </div><div>The chart has 1 Y axis displaying 발전량. Data ranges from 0 to 1875996.</div></div></div><div aria-hidden="false" class="highcharts-announcer-container" style="position: relative;"><div aria-hidden="false" aria-live="polite" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"></div><div aria-hidden="false" aria-live="assertive" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"></div><div aria-hidden="false" aria-live="polite" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"></div></div><div id="highcharts-7dzv8bl-0" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width: 1178px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; touch-action: manipulation; outline: none;" aria-hidden="false" tabindex="0"><div aria-hidden="false" class="highcharts-a11y-proxy-container-before" style="top: 0px; left: 0px; white-space: nowrap; position: absolute;"></div><svg version="1.1" class="highcharts-root" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" xmlns="http://www.w3.org/2000/svg" width="1178" height="400" viewBox="0 0 1178 400" aria-hidden="false" aria-label="Interactive chart"><desc aria-hidden="true">Created with Highcharts 10.2.0</desc><defs aria-hidden="true"><clipPath id="highcharts-7dzv8bl-1-"><rect x="0" y="0" width="1084" height="267" fill="none"></rect></clipPath><clipPath id="highcharts-7dzv8bl-21-"><rect x="0" y="0" width="1084" height="267" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1178" height="400" rx="0" ry="0" aria-hidden="true"></rect><rect fill="none" class="highcharts-plot-background" x="84" y="43" width="1084" height="267" aria-hidden="true"></rect><g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1" aria-hidden="true"><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 140.5 43 L 140.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 197.5 43 L 197.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 254.5 43 L 254.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 311.5 43 L 311.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 368.5 43 L 368.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 425.5 43 L 425.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 482.5 43 L 482.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 539.5 43 L 539.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 596.5 43 L 596.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 654.5 43 L 654.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 711.5 43 L 711.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 768.5 43 L 768.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 825.5 43 L 825.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 882.5 43 L 882.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 939.5 43 L 939.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 996.5 43 L 996.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 1053.5 43 L 1053.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 1110.5 43 L 1110.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 1167.5 43 L 1167.5 310" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 83.5 43 L 83.5 310" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1" aria-hidden="true"><path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 84 310.5 L 1168 310.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 84 243.5 L 1168 243.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 84 177.5 L 1168 177.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 84 110.5 L 1168 110.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 84 42.5 L 1168 42.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="84" y="43" width="1084" height="267" aria-hidden="true"></rect><g class="highcharts-axis highcharts-xaxis" data-z-index="2" aria-hidden="true"><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" data-z-index="7" d="M 84 310.5 L 1168 310.5"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2" aria-hidden="true"><text x="25.65283203125" data-z-index="7" text-anchor="middle" transform="translate(0,0) rotate(270 25.65283203125 176.5)" class="highcharts-axis-title" style="color: rgb(102, 102, 102); fill: rgb(102, 102, 102);" y="176.5">발전량</text><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 84 43 L 84 310"></path></g><g class="highcharts-series-group" data-z-index="3" aria-hidden="false"><g class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-color-0 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="url(#highcharts-7dzv8bl-21-)" aria-hidden="false" role="region" tabindex="-1" aria-label="태양광, bar series 1 of 8 with 19 bars." style="outline: none;"><rect x="14.5" y="134.5" width="28" height="15" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="춘천시, 107,863. 태양광." style="outline: none;"></rect><rect x="71.5" y="241.5" width="28" height="24" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="원주시, 180,828. 태양광." style="outline: none;"></rect><rect x="128.5" y="17.5" width="28" height="20" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="강릉시, 151,529. 태양광." style="outline: none;"></rect><rect x="185.5" y="211.5" width="28" height="4" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="동해시, 34,478. 태양광." style="outline: none;"></rect><rect x="242.5" y="211.5" width="28" height="12" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="태백시, 84,259. 태양광." style="outline: none;"></rect><rect x="299.5" y="265.5" width="28" height="1" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="속초시, 12,895. 태양광." style="outline: none;"></rect><rect x="356.5" y="238.5" width="28" height="19" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="삼척시, 146,124. 태양광." style="outline: none;"></rect><rect x="413.5" y="243.5" width="28" height="24" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="홍천군, 179,488. 태양광." style="outline: none;"></rect><rect x="470.5" y="243.5" width="28" height="11" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="횡성군, 86,110. 태양광." style="outline: none;"></rect><rect x="527.5" y="231.5" width="28" height="19" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="영월군, 144,953. 태양광." style="outline: none;"></rect><rect x="584.5" y="198.5" width="28" height="22" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="평창군, 160,372. 태양광." style="outline: none;"></rect><rect x="641.5" y="244.5" width="28" height="14" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="정선군, 102,049. 태양광." style="outline: none;"></rect><rect x="698.5" y="237.5" width="28" height="30" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="철원군, 220,454. 태양광." style="outline: none;"></rect><rect x="756.5" y="223.5" width="28" height="16" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="화천군, 118,207. 태양광." style="outline: none;"></rect><rect x="813.5" y="252.5" width="28" height="15" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="양구군, 111,935. 태양광." style="outline: none;"></rect><rect x="870.5" y="248.5" width="28" height="18" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="인제군, 142,052. 태양광." style="outline: none;"></rect><rect x="927.5" y="245.5" width="28" height="22" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="고성군, 165,040. 태양광." style="outline: none;"></rect><rect x="984.5" y="262.5" width="28" height="4" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="양양군, 30,015. 태양광." style="outline: none;"></rect><rect x="1041.5" y="266.5" width="28" height="1" fill="#ffb48e" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" tabindex="-1" role="img" aria-label="기타, 2,928. 태양광." style="outline: none;"></rect></g><g class="highcharts-markers highcharts-series-0 highcharts-column-series highcharts-color-0" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-color-1 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="url(#highcharts-7dzv8bl-21-)" aria-hidden="false" role="region" tabindex="-1" aria-label="풍력, bar series 2 of 8 with 19 bars." style="outline: none;"><rect x="14.5" y="149.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="춘천시, 31. 풍력." style="outline: none;"></rect><rect x="71.5" y="265.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="원주시, 0. 풍력." style="outline: none;"></rect><rect x="128.5" y="37.5" width="28" height="11" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="강릉시, 85,838. 풍력." style="outline: none;"></rect><rect x="185.5" y="215.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="동해시, 0. 풍력." style="outline: none;"></rect><rect x="242.5" y="223.5" width="28" height="44" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="태백시, 332,719. 풍력." style="outline: none;"></rect><rect x="299.5" y="266.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="속초시, 6. 풍력." style="outline: none;"></rect><rect x="356.5" y="257.5" width="28" height="4" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="삼척시, 31,874. 풍력." style="outline: none;"></rect><rect x="413.5" y="267.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="홍천군, 0. 풍력." style="outline: none;"></rect><rect x="470.5" y="254.5" width="28" height="12" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="횡성군, 89,781. 풍력." style="outline: none;"></rect><rect x="527.5" y="250.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="영월군, 400. 풍력." style="outline: none;"></rect><rect x="584.5" y="220.5" width="28" height="47" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="평창군, 354,255. 풍력." style="outline: none;"></rect><rect x="641.5" y="258.5" width="28" height="7" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="정선군, 54,251. 풍력." style="outline: none;"></rect><rect x="698.5" y="267.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="철원군, 0. 풍력." style="outline: none;"></rect><rect x="756.5" y="239.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="화천군, 6. 풍력." style="outline: none;"></rect><rect x="813.5" y="267.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="양구군, 39. 풍력." style="outline: none;"></rect><rect x="870.5" y="266.5" width="28" height="1" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="인제군, 2,140. 풍력." style="outline: none;"></rect><rect x="927.5" y="267.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="고성군, 0. 풍력." style="outline: none;"></rect><rect x="984.5" y="266.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="양양군, 1,659. 풍력." style="outline: none;"></rect><rect x="1041.5" y="267.5" width="28" height="0" fill="#ff8b93" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" tabindex="-1" role="img" aria-label="기타, 1,666. 풍력." style="outline: none;"></rect></g><g class="highcharts-markers highcharts-series-1 highcharts-column-series highcharts-color-1" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-color-2 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="url(#highcharts-7dzv8bl-21-)" aria-hidden="false" role="region" tabindex="-1" aria-label="수력, bar series 3 of 8 with 19 bars." style="outline: none;"><rect x="14.5" y="149.5" width="28" height="117" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="춘천시, 880,403. 수력." style="outline: none;"></rect><rect x="71.5" y="265.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="원주시, 0. 수력." style="outline: none;"></rect><rect x="128.5" y="48.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="강릉시, 1,904. 수력." style="outline: none;"></rect><rect x="185.5" y="215.5" width="28" height="5" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="동해시, 33,274. 수력." style="outline: none;"></rect><rect x="242.5" y="267.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="태백시, 0. 수력." style="outline: none;"></rect><rect x="299.5" y="266.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="속초시, 0. 수력." style="outline: none;"></rect><rect x="356.5" y="261.5" width="28" height="2" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="삼척시, 11,554. 수력." style="outline: none;"></rect><rect x="413.5" y="267.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="홍천군, 771. 수력." style="outline: none;"></rect><rect x="470.5" y="266.5" width="28" height="1" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="횡성군, 4,705. 수력." style="outline: none;"></rect><rect x="527.5" y="250.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="영월군, 0. 수력." style="outline: none;"></rect><rect x="584.5" y="267.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="평창군, 0. 수력." style="outline: none;"></rect><rect x="641.5" y="265.5" width="28" height="2" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="정선군, 14,411. 수력." style="outline: none;"></rect><rect x="698.5" y="267.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="철원군, 1,073. 수력." style="outline: none;"></rect><rect x="756.5" y="239.5" width="28" height="28" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="화천군, 213,233. 수력." style="outline: none;"></rect><rect x="813.5" y="267.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="양구군, 278. 수력." style="outline: none;"></rect><rect x="870.5" y="267.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="인제군, 1,789. 수력." style="outline: none;"></rect><rect x="927.5" y="267.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="고성군, 803. 수력." style="outline: none;"></rect><rect x="984.5" y="266.5" width="28" height="1" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="양양군, 5,118. 수력." style="outline: none;"></rect><rect x="1041.5" y="267.5" width="28" height="0" fill="#78c3ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-2" tabindex="-1" role="img" aria-label="기타, 0. 수력." style="outline: none;"></rect></g><g class="highcharts-markers highcharts-series-2 highcharts-column-series highcharts-color-2" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-3 highcharts-column-series highcharts-color-3 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="url(#highcharts-7dzv8bl-21-)" aria-hidden="false" role="region" tabindex="-1" aria-label="해양, bar series 4 of 8 with 19 bars." style="outline: none;"><rect x="14.5" y="266.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="춘천시, 0. 해양." style="outline: none;"></rect><rect x="71.5" y="265.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="원주시, 0. 해양." style="outline: none;"></rect><rect x="128.5" y="48.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="강릉시, 0. 해양." style="outline: none;"></rect><rect x="185.5" y="220.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="동해시, 0. 해양." style="outline: none;"></rect><rect x="242.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="태백시, 0. 해양." style="outline: none;"></rect><rect x="299.5" y="266.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="속초시, 0. 해양." style="outline: none;"></rect><rect x="356.5" y="263.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="삼척시, 0. 해양." style="outline: none;"></rect><rect x="413.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="홍천군, 0. 해양." style="outline: none;"></rect><rect x="470.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="횡성군, 0. 해양." style="outline: none;"></rect><rect x="527.5" y="250.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="영월군, 0. 해양." style="outline: none;"></rect><rect x="584.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="평창군, 0. 해양." style="outline: none;"></rect><rect x="641.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="정선군, 0. 해양." style="outline: none;"></rect><rect x="698.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="철원군, 0. 해양." style="outline: none;"></rect><rect x="756.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="화천군, 0. 해양." style="outline: none;"></rect><rect x="813.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="양구군, 0. 해양." style="outline: none;"></rect><rect x="870.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="인제군, 0. 해양." style="outline: none;"></rect><rect x="927.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="고성군, 0. 해양." style="outline: none;"></rect><rect x="984.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="양양군, 0. 해양." style="outline: none;"></rect><rect x="1041.5" y="267.5" width="28" height="0" fill="#a7ff9b" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-3" tabindex="-1" role="img" aria-label="기타, 0. 해양." style="outline: none;"></rect></g><g class="highcharts-markers highcharts-series-3 highcharts-column-series highcharts-color-3" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-4 highcharts-column-series highcharts-color-4 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="url(#highcharts-7dzv8bl-21-)" aria-hidden="false" role="region" tabindex="-1" aria-label="바이오, bar series 5 of 8 with 19 bars." style="outline: none;"><rect x="14.5" y="266.5" width="28" height="1" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="춘천시, 3,224. 바이오." style="outline: none;"></rect><rect x="71.5" y="265.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="원주시, 6,136. 바이오." style="outline: none;"></rect><rect x="128.5" y="48.5" width="28" height="219" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="강릉시, 1,636,597. 바이오." style="outline: none;"></rect><rect x="185.5" y="220.5" width="28" height="27" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="동해시, 203,969. 바이오." style="outline: none;"></rect><rect x="242.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="태백시, 0. 바이오." style="outline: none;"></rect><rect x="299.5" y="266.5" width="28" height="1" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="속초시, 3,198. 바이오." style="outline: none;"></rect><rect x="356.5" y="263.5" width="28" height="4" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="삼척시, 30,648. 바이오." style="outline: none;"></rect><rect x="413.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="홍천군, 0. 바이오." style="outline: none;"></rect><rect x="470.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="횡성군, 0. 바이오." style="outline: none;"></rect><rect x="527.5" y="250.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="영월군, 0. 바이오." style="outline: none;"></rect><rect x="584.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="평창군, 0. 바이오." style="outline: none;"></rect><rect x="641.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="정선군, 0. 바이오." style="outline: none;"></rect><rect x="698.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="철원군, 0. 바이오." style="outline: none;"></rect><rect x="756.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="화천군, 0. 바이오." style="outline: none;"></rect><rect x="813.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="양구군, 0. 바이오." style="outline: none;"></rect><rect x="870.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="인제군, 0. 바이오." style="outline: none;"></rect><rect x="927.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="고성군, 0. 바이오." style="outline: none;"></rect><rect x="984.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="양양군, 0. 바이오." style="outline: none;"></rect><rect x="1041.5" y="267.5" width="28" height="0" fill="#beafff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-4" tabindex="-1" role="img" aria-label="기타, 0. 바이오." style="outline: none;"></rect></g><g class="highcharts-markers highcharts-series-4 highcharts-column-series highcharts-color-4" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-5 highcharts-column-series highcharts-color-5 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="url(#highcharts-7dzv8bl-21-)" aria-hidden="false" role="region" tabindex="-1" aria-label="재생폐기물, bar series 6 of 8 with 19 bars." style="outline: none;"><rect x="14.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="춘천시, 2,153. 재생폐기물." style="outline: none;"></rect><rect x="71.5" y="265.5" width="28" height="2" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="원주시, 11,157. 재생폐기물." style="outline: none;"></rect><rect x="128.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="강릉시, 0. 재생폐기물." style="outline: none;"></rect><rect x="185.5" y="247.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="동해시, 0. 재생폐기물." style="outline: none;"></rect><rect x="242.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="태백시, 45. 재생폐기물." style="outline: none;"></rect><rect x="299.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="속초시, 647. 재생폐기물." style="outline: none;"></rect><rect x="356.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="삼척시, 0. 재생폐기물." style="outline: none;"></rect><rect x="413.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="홍천군, 0. 재생폐기물." style="outline: none;"></rect><rect x="470.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="횡성군, 0. 재생폐기물." style="outline: none;"></rect><rect x="527.5" y="250.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="영월군, 0. 재생폐기물." style="outline: none;"></rect><rect x="584.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="평창군, 0. 재생폐기물." style="outline: none;"></rect><rect x="641.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="정선군, 0. 재생폐기물." style="outline: none;"></rect><rect x="698.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="철원군, 0. 재생폐기물." style="outline: none;"></rect><rect x="756.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="화천군, 0. 재생폐기물." style="outline: none;"></rect><rect x="813.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="양구군, 0. 재생폐기물." style="outline: none;"></rect><rect x="870.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="인제군, 0. 재생폐기물." style="outline: none;"></rect><rect x="927.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="고성군, 0. 재생폐기물." style="outline: none;"></rect><rect x="984.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="양양군, 83. 재생폐기물." style="outline: none;"></rect><rect x="1041.5" y="267.5" width="28" height="0" fill="#d9b29a" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-5" tabindex="-1" role="img" aria-label="기타, 0. 재생폐기물." style="outline: none;"></rect></g><g class="highcharts-markers highcharts-series-5 highcharts-column-series highcharts-color-5" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-6 highcharts-column-series highcharts-color-6 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="url(#highcharts-7dzv8bl-21-)" aria-hidden="false" role="region" tabindex="-1" aria-label="연료전지, bar series 7 of 8 with 19 bars." style="outline: none;"><rect x="14.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="춘천시, 338. 연료전지." style="outline: none;"></rect><rect x="71.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="원주시, 335. 연료전지." style="outline: none;"></rect><rect x="128.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="강릉시, 128. 연료전지." style="outline: none;"></rect><rect x="185.5" y="247.5" width="28" height="20" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="동해시, 150,199. 연료전지." style="outline: none;"></rect><rect x="242.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="태백시, 0. 연료전지." style="outline: none;"></rect><rect x="299.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="속초시, 0. 연료전지." style="outline: none;"></rect><rect x="356.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="삼척시, 6. 연료전지." style="outline: none;"></rect><rect x="413.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="홍천군, 0. 연료전지." style="outline: none;"></rect><rect x="470.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="횡성군, 32. 연료전지." style="outline: none;"></rect><rect x="527.5" y="250.5" width="28" height="17" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="영월군, 124,447. 연료전지." style="outline: none;"></rect><rect x="584.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="평창군, 569. 연료전지." style="outline: none;"></rect><rect x="641.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="정선군, 0. 연료전지." style="outline: none;"></rect><rect x="698.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="철원군, 0. 연료전지." style="outline: none;"></rect><rect x="756.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="화천군, 0. 연료전지." style="outline: none;"></rect><rect x="813.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="양구군, 0. 연료전지." style="outline: none;"></rect><rect x="870.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="인제군, 0. 연료전지." style="outline: none;"></rect><rect x="927.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="고성군, 0. 연료전지." style="outline: none;"></rect><rect x="984.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="양양군, 0. 연료전지." style="outline: none;"></rect><rect x="1041.5" y="267.5" width="28" height="0" fill="#8dffd3" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-6" tabindex="-1" role="img" aria-label="기타, 26. 연료전지." style="outline: none;"></rect></g><g class="highcharts-markers highcharts-series-6 highcharts-column-series highcharts-color-6" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-7 highcharts-column-series highcharts-color-7 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="url(#highcharts-7dzv8bl-21-)" aria-hidden="false" role="region" tabindex="-1" aria-label="IGCC, bar series 8 of 8 with 19 bars." style="outline: none;"><rect x="14.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="춘천시, 0. IGCC." style="outline: none;"></rect><rect x="71.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="원주시, 0. IGCC." style="outline: none;"></rect><rect x="128.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="강릉시, 0. IGCC." style="outline: none;"></rect><rect x="185.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="동해시, 0. IGCC." style="outline: none;"></rect><rect x="242.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="태백시, 0. IGCC." style="outline: none;"></rect><rect x="299.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="속초시, 0. IGCC." style="outline: none;"></rect><rect x="356.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="삼척시, 0. IGCC." style="outline: none;"></rect><rect x="413.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="홍천군, 0. IGCC." style="outline: none;"></rect><rect x="470.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="횡성군, 0. IGCC." style="outline: none;"></rect><rect x="527.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="영월군, 0. IGCC." style="outline: none;"></rect><rect x="584.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="평창군, 0. IGCC." style="outline: none;"></rect><rect x="641.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="정선군, 0. IGCC." style="outline: none;"></rect><rect x="698.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="철원군, 0. IGCC." style="outline: none;"></rect><rect x="756.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="화천군, 0. IGCC." style="outline: none;"></rect><rect x="813.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="양구군, 0. IGCC." style="outline: none;"></rect><rect x="870.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="인제군, 0. IGCC." style="outline: none;"></rect><rect x="927.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="고성군, 0. IGCC." style="outline: none;"></rect><rect x="984.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="양양군, 0. IGCC." style="outline: none;"></rect><rect x="1041.5" y="267.5" width="28" height="0" fill="#87a9ff" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-7" tabindex="-1" role="img" aria-label="기타, 0. IGCC." style="outline: none;"></rect></g><g class="highcharts-markers highcharts-series-7 highcharts-column-series highcharts-color-7" data-z-index="0.1" opacity="1" transform="translate(84,43) scale(1 1)" clip-path="none" aria-hidden="true"></g></g><g class="highcharts-exporting-group" data-z-index="3" aria-hidden="true"><g class="highcharts-no-tooltip highcharts-button highcharts-contextbutton" stroke-linecap="round" style="cursor: pointer;" transform="translate(1144,10)"><title>Chart context menu</title><rect fill="#ffffff" class="highcharts-button-box" x="0.5" y="0.5" width="24" height="22" rx="2" ry="2" stroke="none" stroke-width="1"></rect><path fill="#666666" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" class="highcharts-button-symbol" data-z-index="1" stroke="#666666" stroke-width="3"></path><text x="0" data-z-index="1" y="15.5" style="color: rgb(51, 51, 51); font-weight: normal; fill: rgb(51, 51, 51);"></text></g></g><text x="589" text-anchor="middle" class="highcharts-title" data-z-index="4" style="color: rgb(51, 51, 51); font-size: 18px; fill: rgb(51, 51, 51);" y="24" aria-hidden="true"></text><text x="10" text-anchor="start" class="highcharts-subtitle" data-z-index="4" style="color: rgb(102, 102, 102); fill: rgb(102, 102, 102);" y="20" aria-hidden="true">(단위: GWh)</text><text x="10" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color: rgb(102, 102, 102); fill: rgb(102, 102, 102);" y="397" aria-hidden="true"></text><g class="highcharts-legend highcharts-no-tooltip" data-z-index="7" transform="translate(296,359)" aria-hidden="true"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="586" height="26"></rect><g data-z-index="1"><g><g class="highcharts-legend-item highcharts-column-series highcharts-color-0 highcharts-series-0" data-z-index="1" transform="translate(8,3)"><text x="21" text-anchor="start" data-z-index="2" y="15" style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">태양광</text><rect x="2" y="4" width="12" height="12" fill="#ffb48e" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-1 highcharts-series-1" data-z-index="1" transform="translate(82.125,3)"><text x="21" y="15" text-anchor="start" data-z-index="2" style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">풍력</text><rect x="2" y="4" width="12" height="12" fill="#ff8b93" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-2 highcharts-series-2" data-z-index="1" transform="translate(145.21875,3)"><text x="21" y="15" text-anchor="start" data-z-index="2" style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">수력</text><rect x="2" y="4" width="12" height="12" fill="#78c3ff" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-3 highcharts-series-3" data-z-index="1" transform="translate(208.3125,3)"><text x="21" y="15" text-anchor="start" data-z-index="2" style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">해양</text><rect x="2" y="4" width="12" height="12" fill="#a7ff9b" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-4 highcharts-series-4" data-z-index="1" transform="translate(271.40625,3)"><text x="21" y="15" text-anchor="start" data-z-index="2" style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">바이오</text><rect x="2" y="4" width="12" height="12" fill="#beafff" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-5 highcharts-series-5" data-z-index="1" transform="translate(345.53125,3)"><text x="21" y="15" text-anchor="start" data-z-index="2" style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">재생폐기물</text><rect x="2" y="4" width="12" height="12" fill="#d9b29a" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-6 highcharts-series-6" data-z-index="1" transform="translate(441.734375,3)"><text x="21" y="15" text-anchor="start" data-z-index="2" style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">연료전지</text><rect x="2" y="4" width="12" height="12" fill="#8dffd3" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-7 highcharts-series-7" data-z-index="1" transform="translate(526.90625,3)"><text x="21" y="15" text-anchor="start" data-z-index="2" style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">IGCC</text><rect x="2" y="4" width="12" height="12" fill="#87a9ff" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7" aria-hidden="true"><text x="112.52631578947633" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">춘천시</text><text x="169.57894736841632" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">원주시</text><text x="226.63157894736634" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">강릉시</text><text x="283.6842105263163" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">동해시</text><text x="340.7368421052563" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">태백시</text><text x="397.7894736842063" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">속초시</text><text x="454.8421052631563" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">삼척시</text><text x="511.8947368421063" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">홍천군</text><text x="568.9473684210463" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">횡성군</text><text x="625.9999999999964" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">영월군</text><text x="683.0526315789464" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">평창군</text><text x="740.1052631578864" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">정선군</text><text x="797.1578947368364" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">철원군</text><text x="854.2105263157864" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">화천군</text><text x="911.2631578947363" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">양구군</text><text x="968.3157894736763" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">인제군</text><text x="1025.3684210526262" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">고성군</text><text x="1082.4210526316263" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">양양군</text><text x="1139.4736842105262" text-anchor="middle" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="329" opacity="1">기타</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7" aria-hidden="true"><text x="69" text-anchor="end" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="314" opacity="1">0</text><text x="69" text-anchor="end" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="247" opacity="1">500</text><text x="69" text-anchor="end" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="181" opacity="1">1,000</text><text x="69" text-anchor="end" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="114" opacity="1">1,500</text><text x="69" text-anchor="end" transform="translate(0,0)" style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);" y="47" opacity="1">2,000</text></g><text x="1168" class="highcharts-credits" text-anchor="end" data-z-index="8" y="395" style="cursor: pointer; color: rgb(153, 153, 153); font-size: 9px; fill: rgb(153, 153, 153);" aria-label="Chart credits: Highcharts.com" aria-hidden="false">Highcharts.com</text></svg><div aria-hidden="false" class="highcharts-a11y-proxy-container-after" style="top: 0px; left: 0px; white-space: nowrap; position: absolute;"><div class="highcharts-a11y-proxy-group highcharts-a11y-proxy-group-zoom"></div><div class="highcharts-a11y-proxy-group highcharts-a11y-proxy-group-legend" aria-label="Toggle series visibility, Chart" role="region"><ul role="list"><li style="list-style: none;"><button class="highcharts-a11y-proxy-button" aria-label="Show 태양광" tabindex="-1" aria-pressed="true" style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 52.125px; height: 18px; left: 306px; top: 364px;"></button></li><li style="list-style: none;"><button class="highcharts-a11y-proxy-button" aria-label="Show 풍력" tabindex="-1" aria-pressed="true" style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 41.0938px; height: 18px; left: 380px; top: 364px;"></button></li><li style="list-style: none;"><button class="highcharts-a11y-proxy-button" aria-label="Show 수력" tabindex="-1" aria-pressed="true" style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 41.0938px; height: 18px; left: 443px; top: 364px;"></button></li><li style="list-style: none;"><button class="highcharts-a11y-proxy-button" aria-label="Show 해양" tabindex="-1" aria-pressed="true" style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 41.0938px; height: 18px; left: 506px; top: 364px;"></button></li><li style="list-style: none;"><button class="highcharts-a11y-proxy-button" aria-label="Show 바이오" tabindex="-1" aria-pressed="true" style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 52.125px; height: 18px; left: 569px; top: 364px;"></button></li><li style="list-style: none;"><button class="highcharts-a11y-proxy-button" aria-label="Show 재생폐기물" tabindex="-1" aria-pressed="true" style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 74.2031px; height: 18px; left: 644px; top: 364px;"></button></li><li style="list-style: none;"><button class="highcharts-a11y-proxy-button" aria-label="Show 연료전지" tabindex="-1" aria-pressed="true" style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 63.1719px; height: 18px; left: 740px; top: 364px;"></button></li><li style="list-style: none;"><button class="highcharts-a11y-proxy-button" aria-label="Show IGCC" tabindex="-1" aria-pressed="true" style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 48.4316px; height: 18px; left: 825px; top: 364px;"></button></li></ul></div><div class="highcharts-a11y-proxy-group highcharts-a11y-proxy-group-chartMenu"><button class="highcharts-a11y-proxy-button highcharts-no-tooltip" aria-label="View chart menu, Chart" aria-expanded="false" title="Chart context menu" style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 1px; height: 1px; left: -355px; top: -1679px;"></button></div></div></div><div id="highcharts-screen-reader-region-after-0" aria-hidden="false" style="position: relative;"><div aria-hidden="false" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"><div id="highcharts-end-of-chart-marker-0" class="highcharts-exit-anchor" tabindex="0" aria-hidden="false">End of interactive chart.</div></div></div></div>
+				</div>
+				
+				<!-- 표 -->
+				<div id="table" style="display: none;">
+					<p class="p_txt right">(단위 : MWh)</p>
+					<div class="table_list sty02 m_scroll02 on mt0" tabindex="0">
+						<table>
+							<caption id="table_caption">강릉시,고성군,동해시,삼척시,속초시,양구군,양양군,영월군,원주시,인제군,정선군,철원군,춘천시,태백시,평창군,홍천군,화천군,횡성군,기타 발전량(기초)에 관련된 표로 연도, 지역, 에너지원, 기초지자체 로 구성되어있다.</caption>
+							<colgroup>
+								<col width="200px">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+									<col width="((100% - 200px) / 19)%">
+								
+							</colgroup>
+							<thead>
+								<tr>
+									<th>구분</th>
+									
+										<th>
+											춘천시
+										</th>
+									
+										<th>
+											원주시
+										</th>
+									
+										<th>
+											강릉시
+										</th>
+									
+										<th>
+											동해시
+										</th>
+									
+										<th>
+											태백시
+										</th>
+									
+										<th>
+											속초시
+										</th>
+									
+										<th>
+											삼척시
+										</th>
+									
+										<th>
+											홍천군
+										</th>
+									
+										<th>
+											횡성군
+										</th>
+									
+										<th>
+											영월군
+										</th>
+									
+										<th>
+											평창군
+										</th>
+									
+										<th>
+											정선군
+										</th>
+									
+										<th>
+											철원군
+										</th>
+									
+										<th>
+											화천군
+										</th>
+									
+										<th>
+											양구군
+										</th>
+									
+										<th>
+											인제군
+										</th>
+									
+										<th>
+											고성군
+										</th>
+									
+										<th>
+											양양군
+										</th>
+									
+										<th>
+											기타
+										</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="table_highlight3">
+									<td>신재생에너지 합계(MWh)</td>
+									
+										<td>
+											994,012
+										</td>
+									
+										<td>
+											198,456
+										</td>
+									
+										<td>
+											1,875,996
+										</td>
+									
+										<td>
+											421,919
+										</td>
+									
+										<td>
+											417,023
+										</td>
+									
+										<td>
+											16,745
+										</td>
+									
+										<td>
+											220,206
+										</td>
+									
+										<td>
+											180,259
+										</td>
+									
+										<td>
+											180,627
+										</td>
+									
+										<td>
+											269,801
+										</td>
+									
+										<td>
+											515,196
+										</td>
+									
+										<td>
+											170,711
+										</td>
+									
+										<td>
+											221,527
+										</td>
+									
+										<td>
+											331,446
+										</td>
+									
+										<td>
+											112,251
+										</td>
+									
+										<td>
+											145,981
+										</td>
+									
+										<td>
+											165,843
+										</td>
+									
+										<td>
+											36,875
+										</td>
+									
+										<td>
+											4,619
+										</td>
+									
+								</tr>
+								<tr class="table_highlight3">
+									<td>재생에너지 합계(MWh)</td>
+									
+										<td>
+											993,673
+										</td>
+									
+										<td>
+											198,120
+										</td>
+									
+										<td>
+											1,875,868
+										</td>
+									
+										<td>
+											271,720
+										</td>
+									
+										<td>
+											417,023
+										</td>
+									
+										<td>
+											16,745
+										</td>
+									
+										<td>
+											220,200
+										</td>
+									
+										<td>
+											180,259
+										</td>
+									
+										<td>
+											180,595
+										</td>
+									
+										<td>
+											145,353
+										</td>
+									
+										<td>
+											514,626
+										</td>
+									
+										<td>
+											170,711
+										</td>
+									
+										<td>
+											221,527
+										</td>
+									
+										<td>
+											331,446
+										</td>
+									
+										<td>
+											112,251
+										</td>
+									
+										<td>
+											145,981
+										</td>
+									
+										<td>
+											165,843
+										</td>
+									
+										<td>
+											36,875
+										</td>
+									
+										<td>
+											4,594
+										</td>
+									
+								</tr>
+								<tr class="table_highlight3">
+									<td>신에너지 합계(MWh)</td>
+									
+										<td>
+											338
+										</td>
+									
+										<td>
+											335
+										</td>
+									
+										<td>
+											128
+										</td>
+									
+										<td>
+											150,199
+										</td>
+									
+										<td>
+											-
+										</td>
+									
+										<td>
+											-
+										</td>
+									
+										<td>
+											6
+										</td>
+									
+										<td>
+											-
+										</td>
+									
+										<td>
+											32
+										</td>
+									
+										<td>
+											124,447
+										</td>
+									
+										<td>
+											569
+										</td>
+									
+										<td>
+											-
+										</td>
+									
+										<td>
+											-
+										</td>
+									
+										<td>
+											-
+										</td>
+									
+										<td>
+											-
+										</td>
+									
+										<td>
+											-
+										</td>
+									
+										<td>
+											-
+										</td>
+									
+										<td>
+											-
+										</td>
+									
+										<td>
+											26
+										</td>
+									
+								</tr>
+								<tr class="table_highlight2">
+									<td>지역별 발전비중(%)</td>
+									
+										<td>
+											15.34
+										</td>
+									
+										<td>
+											3.06
+										</td>
+									
+										<td>
+											28.95
+										</td>
+									
+										<td>
+											6.51
+										</td>
+									
+										<td>
+											6.44
+										</td>
+									
+										<td>
+											0.26
+										</td>
+									
+										<td>
+											3.4
+										</td>
+									
+										<td>
+											2.78
+										</td>
+									
+										<td>
+											2.79
+										</td>
+									
+										<td>
+											4.16
+										</td>
+									
+										<td>
+											7.95
+										</td>
+									
+										<td>
+											2.63
+										</td>
+									
+										<td>
+											3.42
+										</td>
+									
+										<td>
+											5.12
+										</td>
+									
+										<td>
+											1.73
+										</td>
+									
+										<td>
+											2.25
+										</td>
+									
+										<td>
+											2.56
+										</td>
+									
+										<td>
+											0.57
+										</td>
+									
+										<td>
+											0.07
+										</td>
+									
+								</tr>
+	
+								
+									<tr>
+										<td>태양광</td>
+										
+											<td>
+												107,863
+											</td>
+										
+											<td>
+												180,828
+											</td>
+										
+											<td>
+												151,529
+											</td>
+										
+											<td>
+												34,478
+											</td>
+										
+											<td>
+												84,259
+											</td>
+										
+											<td>
+												12,895
+											</td>
+										
+											<td>
+												146,124
+											</td>
+										
+											<td>
+												179,488
+											</td>
+										
+											<td>
+												86,110
+											</td>
+										
+											<td>
+												144,953
+											</td>
+										
+											<td>
+												160,372
+											</td>
+										
+											<td>
+												102,049
+											</td>
+										
+											<td>
+												220,454
+											</td>
+										
+											<td>
+												118,207
+											</td>
+										
+											<td>
+												111,935
+											</td>
+										
+											<td>
+												142,052
+											</td>
+										
+											<td>
+												165,040
+											</td>
+										
+											<td>
+												30,015
+											</td>
+										
+											<td>
+												2,928
+											</td>
+										
+									</tr>
+								
+	
+								
+									<tr>
+										<td>풍력</td>
+										
+											<td>
+												31
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												85,838
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												332,719
+											</td>
+										
+											<td>
+												6
+											</td>
+										
+											<td>
+												31,874
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												89,781
+											</td>
+										
+											<td>
+												400
+											</td>
+										
+											<td>
+												354,255
+											</td>
+										
+											<td>
+												54,251
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												6
+											</td>
+										
+											<td>
+												39
+											</td>
+										
+											<td>
+												2,140
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												1,659
+											</td>
+										
+											<td>
+												1,666
+											</td>
+										
+									</tr>
+								
+	
+								
+									<tr>
+										<td>수력</td>
+										
+											<td>
+												880,403
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												1,904
+											</td>
+										
+											<td>
+												33,274
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												11,554
+											</td>
+										
+											<td>
+												771
+											</td>
+										
+											<td>
+												4,705
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												14,411
+											</td>
+										
+											<td>
+												1,073
+											</td>
+										
+											<td>
+												213,233
+											</td>
+										
+											<td>
+												278
+											</td>
+										
+											<td>
+												1,789
+											</td>
+										
+											<td>
+												803
+											</td>
+										
+											<td>
+												5,118
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+									</tr>
+								
+	
+								
+									<tr>
+										<td>해양</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+									</tr>
+								
+	
+								
+									<tr>
+										<td>바이오</td>
+										
+											<td>
+												3,224
+											</td>
+										
+											<td>
+												6,136
+											</td>
+										
+											<td>
+												1,636,597
+											</td>
+										
+											<td>
+												203,969
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												3,198
+											</td>
+										
+											<td>
+												30,648
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+									</tr>
+								
+	
+								
+									<tr>
+										<td>재생폐기물</td>
+										
+											<td>
+												2,153
+											</td>
+										
+											<td>
+												11,157
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												45
+											</td>
+										
+											<td>
+												647
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												83
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+									</tr>
+								
+	
+								
+									<tr>
+										<td>연료전지</td>
+										
+											<td>
+												338
+											</td>
+										
+											<td>
+												335
+											</td>
+										
+											<td>
+												128
+											</td>
+										
+											<td>
+												150,199
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												6
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												32
+											</td>
+										
+											<td>
+												124,447
+											</td>
+										
+											<td>
+												569
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												26
+											</td>
+										
+									</tr>
+								
+	
+								
+									<tr>
+										<td>IGCC</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+											<td>
+												-
+											</td>
+										
+									</tr>
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- 표 끝 -->
+			</div>
+		</div>
+	</div>
+	<!--//sub_cont_wrap-->
+</div>
+<!--//sub_wrap-->
+
+			
+		</div>
+		<!--//sub_wrap-->
+		
+	<!--family site_wrap-->
+		<div class="family_site_wrap">
+			<div class="family_site_inner fix">
+				<div class="family_site_left fix">
+					<!-- <p>협력사 안내</p> -->
+					<ul class="btn_family fix">
+						<li class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-8d35a733fecaa10b9"><span>이전버튼</span></li>
+						<li class="btns">
+							<button class="stop">정지</button>
+							<button class="start">시작</button>
+						</li>
+						<li class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-8d35a733fecaa10b9"><span>다음버튼</span></li>
+					</ul>
+				</div>
+				<div class="footer_slide swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+					<ul class="family_site_cont swiper-wrapper fix" id="swiper-wrapper-8d35a733fecaa10b9" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-1090px, 0px, 0px);"><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" role="group" aria-label="4 / 8" style="width: 218px;"><a href="https://onerec.kmos.kr/portal/index.do" target="_blank" title="새창열림"><img src="/biz/images/common/img_family03.png" alt="신재생 원스톱 사업정보 통합포털 로고 이미지"></a></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" role="group" aria-label="5 / 8" style="width: 218px;"><a href="http://www.kesis.net/main/main.jsp" target="_blank" title="새창열림"><img src="/biz/images/common/img_family04.png" alt="KESIS 국가에너지통계 종합정보시스템 로고 이미지"></a></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5" role="group" aria-label="6 / 8" style="width: 218px;"><a href="http://epsis.kpx.or.kr/epsisnew/" target="_blank" title="새창열림"><img src="/biz/images/common/img_family05.png" alt="EPSIS 전력통계정보시스템 로고 이미지"></a></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6" role="group" aria-label="7 / 8" style="width: 218px;"><a href="https://www.keia.or.kr/information/01.php" target="_blank" title="새창열림"><img src="/biz/images/common/img_family06.png" alt="한국에너지정보문화재단 로고 이미지"></a></li><li class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="7" role="group" aria-label="8 / 8" style="width: 218px;"><a href="https://certi-icnp.kr" target="_blank" title="새창열림"><img src="/biz/images/common/img_family08.jpg" alt="산업융합신제품적합성인증 로고 이미지"></a></li>
+						<li class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 8" style="width: 218px;"><a href="https://www.mcee.go.kr/home/web/main.do" target="_blank" title="새창열림"><img src="/biz/images/common/img_family01.png" alt="기후에너지환경부 로고 이미지"></a></li>
+						<li class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="2 / 8" style="width: 218px;"><a href="https://en-ter.co.kr/main.do" target="_blank" title="새창열림"><img src="/biz/images/common/img_family07.png" alt="에너지마켓플레이스 로고 이미지"></a></li>
+						<li class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 8" style="width: 218px;"><a href="https://www.energy.or.kr/web/kem_home_new/new_main.asp" target="_blank" title="새창열림"><img src="/biz/images/common/img_family02.png" alt="한국에너지공단 로고 이미지"></a></li>
+						<li class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 8" style="width: 218px;"><a href="https://onerec.kmos.kr/portal/index.do" target="_blank" title="새창열림"><img src="/biz/images/common/img_family03.png" alt="신재생 원스톱 사업정보 통합포털 로고 이미지"></a></li>
+						<li class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 8" style="width: 218px;"><a href="http://www.kesis.net/main/main.jsp" target="_blank" title="새창열림"><img src="/biz/images/common/img_family04.png" alt="KESIS 국가에너지통계 종합정보시스템 로고 이미지"></a></li>
+						<li class="swiper-slide" data-swiper-slide-index="5" role="group" aria-label="6 / 8" style="width: 218px;"><a href="http://epsis.kpx.or.kr/epsisnew/" target="_blank" title="새창열림"><img src="/biz/images/common/img_family05.png" alt="EPSIS 전력통계정보시스템 로고 이미지"></a></li>
+						<li class="swiper-slide" data-swiper-slide-index="6" role="group" aria-label="7 / 8" style="width: 218px;"><a href="https://www.keia.or.kr/information/01.php" target="_blank" title="새창열림"><img src="/biz/images/common/img_family06.png" alt="한국에너지정보문화재단 로고 이미지"></a></li>
+						<li class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="7" role="group" aria-label="8 / 8" style="width: 218px;"><a href="https://certi-icnp.kr" target="_blank" title="새창열림"><img src="/biz/images/common/img_family08.jpg" alt="산업융합신제품적합성인증 로고 이미지"></a></li>
+					<li class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="1 / 8" style="width: 218px;"><a href="https://www.mcee.go.kr/home/web/main.do" target="_blank" title="새창열림"><img src="/biz/images/common/img_family01.png" alt="기후에너지환경부 로고 이미지"></a></li><li class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" role="group" aria-label="2 / 8" style="width: 218px;"><a href="https://en-ter.co.kr/main.do" target="_blank" title="새창열림"><img src="/biz/images/common/img_family07.png" alt="에너지마켓플레이스 로고 이미지"></a></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" role="group" aria-label="3 / 8" style="width: 218px;"><a href="https://www.energy.or.kr/web/kem_home_new/new_main.asp" target="_blank" title="새창열림"><img src="/biz/images/common/img_family02.png" alt="한국에너지공단 로고 이미지"></a></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" role="group" aria-label="4 / 8" style="width: 218px;"><a href="https://onerec.kmos.kr/portal/index.do" target="_blank" title="새창열림"><img src="/biz/images/common/img_family03.png" alt="신재생 원스톱 사업정보 통합포털 로고 이미지"></a></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" role="group" aria-label="5 / 8" style="width: 218px;"><a href="http://www.kesis.net/main/main.jsp" target="_blank" title="새창열림"><img src="/biz/images/common/img_family04.png" alt="KESIS 국가에너지통계 종합정보시스템 로고 이미지"></a></li></ul>
+				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+			</div>
+		</div>
+		<!--//family site_wrap-->
+
+		
+		<!--footer_wrap-->
+		<div class="footer_wrap" id="footer">
+			<div class="footer_inner">
+				<div class="footer_top fix">
+					<div class="footer_top_left fix">
+						<h2 style="margin-right: 5px;"><a href="/biz/main/main.do"><img src="/biz/images/common/logo_footer.png" alt="한국에너지공단 신재생에너지센터"></a></h2>
+						<ul class="footer_etc">
+							<!-- <li><a href="javascript:;">이용약관</a></li> -->
+							<li><a href="https://www.energy.or.kr/front/conts/107001000000000.do" target="_blank" title="새창열림">개인정보처리방침</a></li>
+							<li><a href="http://www.kemco.or.kr/web/kem_home_new/util/email.asp" target="_blank" title="새창열림">이메일무단수집거부</a></li>
+						</ul>
+					</div>
+					<div class="footer_top_right fix">
+						<p class="footer_address"><span>44538 울산광역시 중구 종가로 323 (우정동 528-1)</span><span>대표전화 : 052) 920-0114</span></p>
+						<div class="footer_copyright">
+							<span>Copyright ⓒ 2021 신·재생에너지센터. All Rights Reserved.</span>
+							<a title="새창" href="http://www.wa.or.kr/board/list.asp?BoardID=0006" target="_blank" class="web_mark">
+								<img class="wa" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)" src="/biz/images/common/web_mark_2025.png" width="" height="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="footer_bott">
+					<div class="footer_bott_left">
+						<address>
+						</address>
+					</div>
+					<div class="footer_bott_right fix">
+						<ul class="footer_sns fix">
+							<li><a href="javascript:;"><img src="/biz/images/common/ico_sns01.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="/biz/images/common/ico_sns02.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="/biz/images/common/ico_sns03.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="/biz/images/common/ico_sns04.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="/biz/images/common/ico_sns05.png" alt=""></a></li>
+						</ul>
+						<a href="javascript:;" class="btn_top"><span>TOP</span></a>
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<!--//footer_wrap-->
+		<!--sitemap-->
+		<div id="sitemap" class="sitemap">
+			<div class="sm_w">
+				<div class="sm_b">
+					<div class="h_w">
+						<div class="h"><span>전체메뉴</span></div>
+						<a href="javascript:void(0);" class="ico sm_btn_c"><span>사이트맵 닫기</span></a>
+					</div>
+
+					<div class="menu_w">
+						<ul class="d1_l fix">
+							<li class="li01">
+								<a href="/biz/introduce/new_engy/intro_home.do?gubun=A" class="d1 abc"><span>주요사업</span></a>
+								<div class="d2_w fix">
+									<ul class="d2_l">
+										<li><a href="/biz/introduce/new_engy/intro_home.do?gubun=A"><span>신재생에너지 보급확대</span></a></li>
+										<li><a href="/biz/introduce/new_policy/plan4tdus.do?gubun=A"><span>정책 및 통계</span></a></li>
+										<li><a href="/biz/introduce/new_rps/intro_rps.do?gubun=A"><span>RPS</span></a></li>
+										<li><a href="/biz/introduce/new_comm/onestop.do?gubun=A"><span>대국민 정보제공</span></a></li>										
+										<li><a href="/biz/introduce/new_ib/intro_offshorewind_support.do?gubun=A"><span>신재생에너지 산업기반 구축</span></a></li>										
+										<li><a href="/biz/introduce/new_cert/intro_standard.do?gubun=B"><span>신재생에너지 설비 인증 및 검증</span></a></li>									
+									</ul>
+								</div>
+							</li>
+							<li class="li02">
+								<a href="/biz/faq/faq_main.do" class="d1"><span>FAQ 및 질문하기</span></a>
+								<div class="d2_w fix">
+									<ul class="d2_l">
+										<li><a href="/biz/faq/faq_list02.do?depth_1=A010000&amp;depth_2=A010100"><span>신재생에너지 보급확대</span></a></li>
+										<li><a href="/biz/faq/faq_list02.do?depth_1=A020000&amp;depth_2=A020100"><span>정책 및 통계</span></a></li>
+										<li><a href="/biz/faq/faq_list02.do?depth_1=A030000&amp;depth_2=A030100"><span>RPS</span></a></li>
+										<li><a href="/biz/faq/faq_list02.do?depth_1=A040000&amp;depth_2=A040100"><span>대국민 정보제공</span></a></li>
+										<li><a href="/biz/faq/faq_list02.do?depth_1=A060000&amp;depth_2=A060100"><span>신재생에너지 산업기반 구축</span></a></li>
+										<li><a href="/biz/faq/faq_list02.do?depth_1=A050000&amp;depth_2=A050100"><span>신재생에너지 설비 인증 및 검증</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="li04">
+								<a href="/biz/pds/notice/list.do" class="d1"><span>자료실</span></a>
+								<div class="d2_w fix">
+									<ul class="d2_l">
+										<li><a href="/biz/pds/notice/list.do"><span>알림/뉴스</span></a></li>
+										<li><a href="/biz/pds/related/list.do"><span>관계법령</span></a></li>
+										<li><a href="/biz/pds/statistic/list.do"><span>통계자료</span></a></li>
+										<li><a href="/biz/pds/photo/list.do"><span>일반자료실</span></a></li>										
+									</ul>
+								</div>
+							</li>
+							<li class="li05">
+								<a href="/biz/korea/intro/kor_solar.do" class="d1"><span>신재생E코리아</span></a>
+								<div class="d2_w fix">
+									<ul class="d2_l">
+										<li><a href="/biz/korea/intro/kor_solar.do"><span>신재생에너지원별 소개</span></a></li>
+										<li><a href="/biz/korea/board/list.do"><span>홍보마당</span></a></li>
+										<li><a href="/biz/korea/prevention/list.do"><span>신재생설비 안전관리 및 피해예방</span></a></li>										
+									</ul>
+								</div>
+							</li>
+							<li class="li06">
+								<a href="/biz/center/center_info/center_pm.do" class="d1"><span>센터소개</span></a>
+								<div class="d2_w fix">
+									<ul class="d2_l">
+										<li><a href="/biz/center/center_info/center_pm.do"><span>인사말</span></a></li>
+										<!-- <li><a href="javascript:;"><span>센터전체설명</span></a></li> -->
+										<li><a href="/biz/center/center_info/center_his.do"><span>설립배경 및 연혁</span></a></li>
+										<li><a href="/biz/center/org/org_total.do"><span>조직도</span></a></li>
+										<li><a href="/biz/center/center_info/center_navi.do"><span>찾아오시는 길</span></a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//sitemap-->
+		
+	</div>
+	<!--//common_wrap-->
+</div>
+<!--//body_wrap-->
+    
+
+</body></html>
